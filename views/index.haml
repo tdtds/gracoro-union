@@ -1,0 +1,10 @@
+!!! XHTML
+%html
+	%head
+		%title グラコロ同盟
+	%body
+		%h1 グラコロ同盟
+		%dl
+			- @people.each do |person|
+				%dt= person.name
+				%dd= person.count
