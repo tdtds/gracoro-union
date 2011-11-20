@@ -8,9 +8,9 @@ raise StandardError::new( 'no TWITTER_OAUTH_TOKEN' ) unless ENV['TWITTER_OAUTH_T
 raise StandardError::new( 'no TWITTER_OAUTH_TOKEN_SECRET' ) unless ENV['TWITTER_OAUTH_TOKEN_SECRET']
 
 Mongoid.configure do |conf|
-	if ENV['MONGOLAB_URI']
-		uri = URI.parse(ENV['MONGOLAB_URI'])
-		conn = Mongo::Connection.from_uri( ENV['MONGOLAB_URI'] )
+	if ENV['MONGOHQ_URL']
+		uri = URI.parse(ENV['MONGOHQ_URL'])
+		conn = Mongo::Connection.from_uri( ENV['MONGOHQ_URL'] )
 		conf.master = conn.db( uri.path.gsub( %r|^/|, '' ) )
 	else
 		conn = Mongo::Connection.new
