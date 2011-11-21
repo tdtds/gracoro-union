@@ -1,2 +1,2 @@
-web:   bundle exec thin start -p $PORT
-watch: bundle exec ruby watch.rb	
+web:    bundle exec thin start -p $PORT
+worker: bundle exec ruby watch.rb
