@@ -1,10 +1,29 @@
-!!! XHTML
+!!!
 %html
 	%head
 		%title グラコロ同盟
 	%body
-		%h1 グラコロ同盟
-		%dl
-			- @people.each do |person|
-				%dt= person.name
-				%dd= person.count
+		%h1 グラコロ同盟 Since 2003
+		%div
+			%h2 ランキング
+			%dl
+				- @people.each do |person|
+					%dt= person.name
+					%dd= person.count
+		%div
+			%h2 過去の同盟活動
+			%ul
+				%li
+					%a{href: 'http://sho.tdiary.net/20031119.html#p03'} 2003
+				%li
+					%a{href: 'http://sho.tdiary.net/20041206.html#p01'} 2004
+				%li
+					%a{href: 'http://sho.tdiary.net/20051125.html#p01'} 2005
+				%li
+					%a{href: 'http://sho.tdiary.net/20061121.html#p01'} 2006
+				%li
+					%a{href: 'http://sho.tdiary.net/20071122.html#p01'} 2007
+				%li
+					%a{href: 'http://sho.tdiary.net/20081031.html#p01'} 2008
+				%li
+					%a{href: 'http://sho.tdiary.net/20091011.html#p01'} 2009
