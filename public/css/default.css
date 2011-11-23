@@ -112,12 +112,12 @@ h1 {
 #ranking a {
 	display: block;
 	float: left;
-	width: 9em;
+	width: 56px;
 	font-weight: bold;
 }
 
 #ranking div {
-	margin-left: 9em;
+	margin-left: 56px;
 }
 
 #ranking span {

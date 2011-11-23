@@ -29,10 +29,12 @@ begin
 			person = Person.where( name: status.user[:screen_name] ).first ||
 				Person::create( name: status.user[:screen_name], count: 0 )
 			person.count += 1
+			person.icon = status.user[:profile_image_url]
 			person.save
 			Tweet::create(
 				_id: status.id,
 				name: status.user[:screen_name],
+				icon: status.user[:profile_image_url],
 				text: status.text ).save
 			p status.user[:screen_name]
 		rescue
