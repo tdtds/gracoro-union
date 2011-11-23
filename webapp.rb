@@ -1,5 +1,9 @@
 # -*- coding: utf-8; -*-
 #
+# webapp.rb : gracoro-union web application
+#
+# Copyright (C) 2011 by TADA Tadashi <t@tdtds.jp>
+#
 
 require 'rubygems'
 require 'sinatra/base'

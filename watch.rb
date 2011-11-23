@@ -1,5 +1,9 @@
 # -*- coding: utf-8; -*-
 #
+# watch.rb : gracoro-union worker process watching twitter apecified hashtag.
+#
+# Copyright (C) 2011 by TADA Tadashi <t@tdtds.jp>
+#
 require 'tweetstream'
 require './lib/connect'
 require './lib/tweet'

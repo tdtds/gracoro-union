@@ -1,5 +1,7 @@
 # -*- coding: utf-8; -*-
 #
+# Copyright (C) 2011 by TADA Tadashi <t@tdtds.jp>
+#
 require 'mongoid'
 
 raise StandardError::new( 'no TWITTER_CONSUMER_KEY' ) unless ENV['TWITTER_CONSUMER_KEY']
