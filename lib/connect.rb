@@ -10,7 +10,7 @@ raise StandardError::new( 'no TWITTER_OAUTH_TOKEN' ) unless ENV['TWITTER_OAUTH_T
 raise StandardError::new( 'no TWITTER_OAUTH_TOKEN_SECRET' ) unless ENV['TWITTER_OAUTH_TOKEN_SECRET']
 
 Mongoid.configure do |conf|
-	mongo_uri = ENV['MONGOLAB_URL']
+	mongo_uri = ENV['MONGOLAB_URI']
 	if mongo_uri
 		uri = URI.parse( mongo_uri )
 		conn = Mongo::Connection.from_uri( mongo_uri )
