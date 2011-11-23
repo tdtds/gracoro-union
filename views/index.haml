@@ -34,10 +34,14 @@
 		#main
 			#ranking
 				%h2 今期のランキング
-				%dl
+				%ol
 					- @people.each do |person|
-						%dt= person.name
-						%dd= person.count
+						%li
+							%a{href: "http://twitter.com/#{person.name}"}= person.name
+							%div
+								- person.count.times do |i|
+									%img{src: '/img/gracoro20x20.png', alt: ''}
+								%span= person.count
 			#widget
 				:javascript
 					new TWTR.Widget({

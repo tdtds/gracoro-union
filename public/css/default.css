@@ -54,8 +54,9 @@ h1 {
 }
 
 #tweet-button {
+	margin-left: 570px;
 	padding: 16px;
-	text-align: right;
+	text-align: center;
 }
 
 #main {
@@ -84,24 +85,45 @@ h1 {
 	margin-right: 16px;
 }
 
-#ranking dl {
+#ranking ol {
 	margin-top: 16px;
 	margin-left: 32px;
-	line-height: 200%;
+	list-style-type: none;
 }
 
-#ranking dt {
+#ranking li {
+	overflow: hidden;
+	margin-bottom: 8px;
+}
+
+#ranking li:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+}
+
+#ranking a {
+	display: block;
 	float: left;
-	width: 8em;
-	margin-right: 32px;
+	width: 9em;
 	font-weight: bold;
 }
 
-#ranking dd {
+#ranking div {
+	margin-left: 9em;
 }
 
+#ranking span {
+	font-size: x-small;
+}
+#ranking span:before { content: "("; }
+#ranking span:after { content: "個)"; }
+
 #widget {
-	text-align: right;
+	margin-left: 570px;
+	text-align: center;
 }
 
 #footer {
@@ -109,6 +131,7 @@ h1 {
 	text-align: left;
 	background-color: #333;
 	color: #ddd;
+	font-size: 70%;
 }
 
 .footer-item {
