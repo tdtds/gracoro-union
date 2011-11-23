@@ -53,6 +53,11 @@ h1 {
 	margin-bottom: 1em;
 }
 
+#description p.alert {
+	font-weight: bold;
+	color: red;
+}
+
 #tweet-button {
 	margin-left: 570px;
 	padding: 16px;
