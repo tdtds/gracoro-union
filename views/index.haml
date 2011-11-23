@@ -1,29 +1,93 @@
 !!!
 %html
 	%head
-		%title グラコロ同盟
+		%title グラコロ同盟2011
+		%link{rel: 'stylesheet', href: '/css/default.css', type: 'text/css', media: 'all'}
+		%script{src: 'http://widgets.twimg.com/j/2/widget.js'}
 	%body
-		%h1 グラコロ同盟 Since 2003
-		%div
-			%h2 ランキング
+		#fb-root
+		:javascript
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {return;}
+				js = d.createElement(s); js.id = id;
+				js.src = '//connect.facebook.net/ja_JP/all.js#xfbml=1&appId=135896593126567';
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		.header
+			%h1
+				%img{src: '/img/gracoro_union2011.png', alt: 'グラコロ同盟2011'}
+			%p
+				グラコロ同盟は、マクドナルド冬の定番メニュー「グラタンコロッケバーガー」
+				(通称「グラコロ」)が大好きな人たちによるコミュニティです。
+				シーズン中はただひたすらグラコロを食べ、報告しあい、その数を競い合っています。
+			%p
+				Twitterでハッシュタグ「
+				%a{href: 'https://twitter.com/#!/search/realtime/%23gracoro_union'} #gracoro_union
+				」をつけてつぶやくだけで参加できますので、お気軽にどうぞ!
+				いっしょにグラコロを食べまくろう!(※当同盟は日本マクドナルドとはいっさい関係ありません)
+			%p
+				%a{href: 'https://twitter.com/share?source=tweetbutton&text=%E3%82%B0%E3%83%A9%E3%82%B3%E3%83%AD%E9%A3%9F%E3%81%B9%E3%81%9F%E3%82%88!%20%23gracoro_union%20http%3A%2F%2Fj.mp%2Fgrauni', target: '_blank'}
+					%img{src: '/img/tweet.png', alt: 'Twitterで「グラコロ食べたよ!」とつぶやく'}
+		.ranking
+			%h2 今期のランキング
 			%dl
 				- @people.each do |person|
 					%dt= person.name
 					%dd= person.count
-		%div
-			%h2 過去の同盟活動
-			%ul
-				%li
-					%a{href: 'http://sho.tdiary.net/20031119.html#p03'} 2003
-				%li
-					%a{href: 'http://sho.tdiary.net/20041206.html#p01'} 2004
-				%li
-					%a{href: 'http://sho.tdiary.net/20051125.html#p01'} 2005
-				%li
-					%a{href: 'http://sho.tdiary.net/20061121.html#p01'} 2006
-				%li
-					%a{href: 'http://sho.tdiary.net/20071122.html#p01'} 2007
-				%li
-					%a{href: 'http://sho.tdiary.net/20081031.html#p01'} 2008
-				%li
-					%a{href: 'http://sho.tdiary.net/20091011.html#p01'} 2009
+		.widget
+			:javascript
+				new TWTR.Widget({
+				  version: 2,
+				  type: 'search',
+				  search: '#androidjp',
+				  interval: 30000,
+				  title: '活動状況',
+				  subject: '',
+				  width: 300,
+				  height: 500,
+				  theme: {
+				    shell: {
+				      background: '#8ec1da',
+				      color: '#ffffff'
+				    },
+				    tweets: {
+				      background: '#ffffff',
+				      color: '#444444',
+				      links: '#1985b5'
+				    }
+				  },
+				  features: {
+				    scrollbar: true,
+				    loop: true,
+				    live: true,
+				    behavior: 'default'
+				  }
+				}).render().start();
+		.footer
+			.footer-item
+				%h2 過去の活動実績
+				%ul
+					%li
+						%a{href: 'http://sho.tdiary.net/20031119.html#p03'} 2003
+					%li
+						%a{href: 'http://sho.tdiary.net/20041206.html#p01'} 2004
+					%li
+						%a{href: 'http://sho.tdiary.net/20051125.html#p01'} 2005
+					%li
+						%a{href: 'http://sho.tdiary.net/20061121.html#p01'} 2006
+					%li
+						%a{href: 'http://sho.tdiary.net/20071122.html#p01'} 2007
+					%li
+						%a{href: 'http://sho.tdiary.net/20081031.html#p01'} 2008
+					%li
+						%a{href: 'http://sho.tdiary.net/20091011.html#p01'} 2009
+			.footer-item
+				%h2 問合せ先
+				%ul
+					%li
+						%a.twitter-follow-button{href: 'http://twitter.com/gracoro_union', 'data-show-count'=>'false'} Follow @gracoro_union
+						%script{src: '//platform.twitter.com/widgets.js'}
+					%li
+						.fb-like-box{'data-href'=>'http://www.facebook.com/gracoro.union', 'data-width'=>'292', 'data-colorscheme'=>'dark', 'data-show-faces'=>'false', 'data-stream'=>'false','data-header'=>'false'}
+				
