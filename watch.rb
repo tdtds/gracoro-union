@@ -18,7 +18,7 @@ TweetStream.configure do |config|
 	config.auth_method = :oauth
 end
 
-search_string = '#banei_imas'
+search_string = '#gracoro_union'
 
 TweetStream::Client::new.on_error {|message|
 	puts message
