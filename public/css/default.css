@@ -4,3 +4,135 @@
  * Copyright (C) 2011 by TADA Tadashi <t@tdtds.jp>
  */
 
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-color: #f07c00;
+	width: 100%;
+	text-align: center;
+}
+
+h1 {
+	margin: 0px auto;
+	background-color: #fff;
+	width: 900px;
+	padding: 0px 16px;
+	text-align: center;
+	border-radius: 0px 0px 8px 8px;
+}
+
+#header {
+	overflow: hidden;
+	width: 900px;
+	margin: 0px auto;
+	margin-top: 16px;
+	padding: 16px;
+	text-align: left;
+	background-color: #f7f78f;
+	border-radius: 8px;
+}
+
+#header:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+}
+
+#description {
+	float: left;
+	width: 560px;
+	margin-right: 16px;
+}
+
+#description p {
+	margin-bottom: 1em;
+}
+
+#tweet-button {
+	padding: 16px;
+	text-align: right;
+}
+
+#main {
+	overflow: hidden;
+	width: 900px;
+	margin: 0px auto;
+	margin-top: 16px;
+	padding: 16px;
+	text-align: left;
+	background-color: #fff;
+	border-radius: 8px;
+}
+
+#main:after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 1px;
+	overflow: hidden;
+}
+
+#ranking {
+	float: left;
+	width: 560px;
+	height: auto;
+	margin-right: 16px;
+}
+
+#ranking dl {
+	margin-top: 16px;
+	margin-left: 32px;
+	line-height: 200%;
+}
+
+#ranking dt {
+	float: left;
+	width: 8em;
+	margin-right: 32px;
+	font-weight: bold;
+}
+
+#ranking dd {
+}
+
+#widget {
+	text-align: right;
+}
+
+#footer {
+	margin-top: 16px;
+	text-align: left;
+	background-color: #333;
+	color: #ddd;
+}
+
+.footer-item {
+	margin-top: 16px;
+	margin-bottom: 8px;
+	margin-left: 32px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.footer-item h2 {
+	font-size: medium;
+}
+
+.footer-item ul {
+	margin-top: 8px;
+	margin-left: 32px;
+	list-style-type: none;
+}
+
+.footer-item a {
+	color: #ddd;
+	text-decoration: none;
+}
+.footer-item a:hover {
+	text-decoration: underline;
+}
