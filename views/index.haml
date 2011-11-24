@@ -80,39 +80,6 @@
 					    behavior: 'default'
 					  }
 					}).render().start();
-		#footer
-			.footer-item
-				%h2 過去の活動実績
-				%ul
-					%li
-						%a{href: 'http://sho.tdiary.net/20031119.html#p03'} 2003年
-					%li
-						%a{href: 'http://sho.tdiary.net/20041206.html#p01'} 2004年
-					%li
-						%a{href: 'http://sho.tdiary.net/20051125.html#p01'} 2005年
-					%li
-						%a{href: 'http://sho.tdiary.net/20061121.html#p01'} 2006年
-					%li
-						%a{href: 'http://sho.tdiary.net/20071122.html#p01'} 2007年
-					%li
-						%a{href: 'http://sho.tdiary.net/20081031.html#p01'} 2008年
-					%li
-						%a{href: 'http://sho.tdiary.net/20091011.html#p01'} 2009年
-			.footer-item
-				%h2 問合せ先
-				%ul
-					%li
-						%a.twitter-follow-button{href: 'http://twitter.com/gracoro_union', 'data-show-count'=>'false'} Follow @gracoro_union
-						%script{src: '//platform.twitter.com/widgets.js'}
-					%li
-						.fb-like-box{'data-href'=>'http://www.facebook.com/gracoro.union', 'data-width'=>'292', 'data-colorscheme'=>'dark', 'data-show-faces'=>'false', 'data-stream'=>'false','data-header'=>'false'}
-
-		:javascript
-			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-			try {
-				var pageTracker = _gat._getTracker("UA-53836-7");
-				pageTracker._trackPageview();
-			} catch(err) {}
+		!= haml :footer
 
 -# Copyright (C) 2011 by TADA Tadashi <t@tdtds.jp>
