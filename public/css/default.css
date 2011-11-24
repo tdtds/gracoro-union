@@ -131,6 +131,24 @@ h1 {
 	text-align: center;
 }
 
+#main dl {
+	margin: 16px 48px 48px 48px;
+}
+
+#main dt {
+	font-weight: bold;
+}
+
+#main dd {
+	margin-top: 8px;
+	margin-left: 48px;
+	margin-bottom: 16px;
+}
+
+#main dd p {
+	margin-bottom: 0.8em;
+}
+
 #footer {
 	margin-top: 16px;
 	text-align: left;
@@ -141,6 +159,7 @@ h1 {
 
 .footer-item {
 	margin-top: 16px;
+	margin-right: 48px;
 	margin-bottom: 8px;
 	margin-left: 32px;
 	display: inline-block;
@@ -153,7 +172,7 @@ h1 {
 
 .footer-item ul {
 	margin-top: 8px;
-	margin-left: 32px;
+	margin-left: 1em;
 	list-style-type: none;
 }
 

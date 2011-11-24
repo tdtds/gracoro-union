@@ -19,6 +19,10 @@ class GracoroUnion < Sinatra::Base
 		@people = Person.all( sort: [[:count, :desc]], limit: 30 )
 		haml :index
 	end
+
+	get '/rule' do
+		haml :rule
+	end
 end
 
 GracoroUnion::run! if __FILE__ == $0
