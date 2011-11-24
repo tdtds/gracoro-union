@@ -23,7 +23,8 @@ h1 img {
 	overflow: hidden;
 	width: 900px;
 	margin: 0px auto;
-	margin-top: 16px;
+	margin-top: 8px;
+	margin-bottom: 16px;
 	padding: 16px;
 	text-align: left;
 	background-color: #f7f78f;
@@ -63,7 +64,7 @@ h1 img {
 	overflow: hidden;
 	width: 900px;
 	margin: 0px auto;
-	margin-top: 16px;
+	margin-top: 8px;
 	padding: 16px;
 	text-align: left;
 	background-color: #fff;
