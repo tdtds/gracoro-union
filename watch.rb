@@ -25,7 +25,7 @@ begin
 		puts message
 	}.track( search_string ) do |status|
 		begin
-			next if status.text.index '@' # skipping replies included.
+			next if /@\S/ === status.text # skipping replies included.
 			person = Person.where( name: status.user[:screen_name] ).first ||
 				Person::create( name: status.user[:screen_name], count: 0 )
 			person.count += 1
