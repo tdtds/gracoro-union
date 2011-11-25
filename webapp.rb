@@ -16,12 +16,18 @@ class GracoroUnion < Sinatra::Base
 	set :haml, { format: :html5, escape_html: true }
 
 	get '/' do
-		@people = Person.all( sort: [[:count, :desc]], limit: 30 )
 		haml :index
 	end
 
 	get '/rule' do
 		haml :rule
+	end
+
+:private
+	def ranking( limit = 200 )
+		Person.all( sort: [[:count, :desc]], limit: limit ).each_with_index do |person, index|
+			yield person, index
+		end
 	end
 end
 

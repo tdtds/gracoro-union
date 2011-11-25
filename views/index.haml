@@ -4,6 +4,8 @@
 		%title グラコロ同盟2011
 		%link{rel: 'stylesheet', href: '/css/default.css', type: 'text/css', media: 'all'}
 		%link{rel: 'icon', href: '/img/gracoro20x20.png'}
+		%script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'}
+		%script{src: '/js/top.js'}
 		%script{src: 'http://widgets.twimg.com/j/2/widget.js'}
 	%body
 		#fb-root
@@ -42,10 +44,10 @@
 						%img{src: '/img/tweet.png', alt: 'Twitterで「グラコロ食べたよ!」とつぶやく'}
 		#main
 			#ranking
-				%h2 今期のランキング (TOP30)
+				%h2 今期のランキング
 				%ol
-					- @people.each do |person|
-						%li
+					- ranking( 200 ) do |person, index|
+						%li{class: index > 10 ? 'hide' : 'show'}
 							%a{href: "http://twitter.com/#{person.name}"}
 								%img{src: "#{person.icon ? person.icon : 'http://a0.twimg.com/sticky/default_profile_images/default_profile_3_normal.png'}", alt: person.name}
 							%div

@@ -97,6 +97,10 @@ h1 img {
 	margin-bottom: 8px;
 }
 
+#ranking li.hide {
+	display: none;
+}
+
 #ranking li:after {
 	content: "";
 	display: block;
@@ -110,6 +114,11 @@ h1 img {
 	float: left;
 	width: 56px;
 	font-weight: bold;
+}
+
+#ranking a.showall {
+	margin-left: 32px;
+	width: 100%;
 }
 
 #ranking div {
