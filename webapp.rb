@@ -24,7 +24,7 @@ class GracoroUnion < Sinatra::Base
 	end
 
 :private
-	def ranking( limit = 200 )
+	def ranking( limit = 300 )
 		Person.all( sort: [[:count, :desc]], limit: limit ).each_with_index do |person, index|
 			yield person, index
 		end
