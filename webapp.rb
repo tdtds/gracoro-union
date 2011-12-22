@@ -8,6 +8,7 @@
 require 'rubygems'
 require 'sinatra/base'
 require 'haml'
+require 'json'
 
 require './lib/connect'
 require './lib/person'
@@ -23,11 +24,28 @@ class GracoroUnion < Sinatra::Base
 		haml :rule
 	end
 
+	get %r|/(\d{4})$| do
+		@year = params[:captures].first
+		begin
+			haml :archive
+		rescue Errno::ENOENT
+			return 404
+		end
+	end
+
 :private
 	def ranking( limit )
 		Person.all( sort: [[:count, :desc]], limit: limit ).each_with_index do |person, index|
 			yield person, index
 		end
+	end
+
+	def ranking_archive( year )
+		JSON::parse( File::open( "data/people.#{year}.json", &:read ) ).sort{|a, b|
+			b['count'] <=> a['count']
+		}.each_with_index{|person, index|
+			yield person, index
+		}
 	end
 end
 

@@ -130,6 +130,10 @@ h1 img {
 #ranking span:before { content: "("; }
 #ranking span:after { content: "個)"; }
 
+div#ranking.archive {
+	width: 100%;
+}
+
 #widget {
 	margin-left: 570px;
 	text-align: center;
