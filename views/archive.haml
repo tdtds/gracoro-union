@@ -34,7 +34,7 @@
 				%ol
 					- ranking_archive( @year ) do |person, index|
 						%li{class: 'show'}
-							%a{href: "http://twitter/#{person['name']}"}
+							%a{href: "http://twitter.com/#{person['name']}"}
 								%img{src: person['icon']}
 							%div
 								- person['count'].times do |i|
