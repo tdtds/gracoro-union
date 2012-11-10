@@ -28,7 +28,7 @@ begin
 			next if /@\S/ === status.text # skipping replies included.
 			person = Person.where( name: status.user[:screen_name] ).first ||
 				Person::create( name: status.user[:screen_name], count: 0 )
-			person.count += 1
+			person.count += status.text.scan(/#{search_string}/).size
 			person.icon = status.user[:profile_image_url]
 			person.save
 			Tweet::create(
