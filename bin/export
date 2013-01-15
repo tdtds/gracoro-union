@@ -1,0 +1,10 @@
+#!/usr/bin/zsh
+source =(heroku config --app gracoro-union | grep MONGOLAB_URI | ruby -ne '
+	x,x,user,pass,host,port,db, = $_.split %r|[:@/]+|
+	puts "user=#{user}"
+	puts "pass=#{pass}"
+	puts "host=#{host}:#{port}"
+	puts "db=#{db}"
+')
+mongoexport -h $host -u $user -p $pass -d $db -c people --jsonArray > people.json
+mongoexport -h $host -u $user -p $pass -d $db -c tweets --jsonArray > tweets.json
