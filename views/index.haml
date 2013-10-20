@@ -6,7 +6,6 @@
 		%link{rel: 'icon', href: '/img/gracoro20x20.png'}
 		%script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'}
 		%script{src: '/js/top.js'}
-		%script{src: 'http://widgets.twimg.com/j/2/widget.js'}
 	%body
 		#fb-root
 		:javascript
@@ -47,34 +46,17 @@
 									%img{src: '/img/gracoro20x20.png', alt: ''}
 								%span= person.count
 			#widget
+				%a.twitter-timeline{href: 'https://twitter.com/search?q=%23gracoro_union', 'data-widget-id'=>'391899687164207104', 'data-chrome'=>'nofooter', 'data-related'=>'gracoro_union'}<リアルタイム活動状況
 				:javascript
-					new TWTR.Widget({
-					  version: 2,
-					  type: 'search',
-					  search: '#gracoro_union',
-					  interval: 30000,
-					  title: 'リアルタイム活動状況',
-					  subject: '',
-					  width: 300,
-					  height: 500,
-					  theme: {
-					    shell: {
-					      background: '#8ec1da',
-					      color: '#ffffff'
-					    },
-					    tweets: {
-					      background: '#ffffff',
-					      color: '#444444',
-					      links: '#1985b5'
-					    }
-					  },
-					  features: {
-					    scrollbar: true,
-					    loop: true,
-					    live: true,
-					    behavior: 'default'
-					  }
-					}).render().start();
+					!function(d,s,id){
+						var js, fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+						if(!d.getElementById(id)){
+							js=d.createElement(s);
+							js.id=id;
+							js.src=p+"://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js,fjs);
+						}
+					}(document,"script","twitter-wjs");
 		!= haml :footer
 
 -# Copyright (C) 2012 by TADA Tadashi <t@tdtds.jp>
