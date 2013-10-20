@@ -35,7 +35,7 @@ class GracoroUnion < Sinatra::Base
 
 :private
 	def ranking( limit )
-		Person.all( sort: [[:count, :desc]], limit: limit ).each_with_index do |person, index|
+		Person.all.desc(:count).limit(limit).each_with_index do |person, index|
 			yield person, index
 		end
 	end
