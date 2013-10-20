@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# usage:
+#   % source =(./bin/config-local)
+heroku config --shell --app gracoro-union | grep ^TWITTER | sed 's/^/export /'
