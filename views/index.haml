@@ -1,7 +1,8 @@
 !!!
 %html
 	%head
-		%title グラコロ同盟2013
+		%title グラコロ同盟
+		%meta{property: 'og:image', content: 'http://gracoro.tdtds.jp/img/og-image.jpg'}
 		%link{rel: 'stylesheet', href: '/css/default.css', type: 'text/css', media: 'all'}
 		%link{rel: 'icon', href: '/img/gracoro20x20.png'}
 		%script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'}
@@ -17,7 +18,7 @@
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		%h1
-			%img{src: '/img/gracoro_union2013.jpg', alt: 'グラコロ同盟2013'}
+			%img{src: '/img/gracoro_union2013.jpg', alt: 'グラコロ同盟'}
 		#header
 			#description
 				%p
@@ -25,39 +26,13 @@
 					(旧称「グラタンコロッケバーガー」)が大好きな人たちによるコミュニティです。
 					シーズン中はただひたすらグラコロを食べ、報告しあい、その数を競い合っています。
 				%p
-					%strong
-						2013シーズンは、公式には10月25日から開始予定です。
-					ただし、先行販売店舗があるようなので、その分もカウントしてかまいません。
+					現在は2013年シーズンを終え、来シーズンに向けて力を蓄えているところです。最新情報は
+					%a{href: "http://twitter.com/gracoro_union"} Twitter
+					や
+					%a{href: "http://www.facebook.com/gracoro.union"} Facebook
+					を通じてお知らせしますので、フォローしてお待ちください。
 				%p
 					(※なお当同盟は日本マクドナルドとはいっさい関係ありません)
-			#tweet-button
-				%p
-					%a{href: 'https://twitter.com/share?source=tweetbutton&text=%E3%82%B0%E3%83%A9%E3%82%B3%E3%83%AD%E9%A3%9F%E3%81%B9%E3%81%9F%E3%82%88!%20%23gracoro_union&url=http%3A%2F%2Fj.mp%2Fgrauni', target: '_blank'}
-						%img{src: '/img/tweet.png', alt: 'Twitterで「グラコロ食べたよ!」とつぶやく'}
-		#main
-			#ranking
-				%h2 今期のランキング
-				%ol
-					- ranking( 300 ) do |person, index|
-						%li{class: index < 10 ? 'show' : 'hide'}
-							%a{href: "http://twitter.com/#{person.name}"}
-								%img{src: "#{person.icon ? person.icon : 'http://a0.twimg.com/sticky/default_profile_images/default_profile_3_normal.png'}", alt: person.name}
-							%div
-								- person.count.times do |i|
-									%img{src: '/img/gracoro20x20.png', alt: ''}
-								%span= person.count
-			#widget
-				%a.twitter-timeline{href: 'https://twitter.com/search?q=%23gracoro_union', 'data-widget-id'=>'391899687164207104', 'data-chrome'=>'nofooter', 'data-related'=>'gracoro_union'}<リアルタイム活動状況
-				:javascript
-					!function(d,s,id){
-						var js, fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
-						if(!d.getElementById(id)){
-							js=d.createElement(s);
-							js.id=id;
-							js.src=p+"://platform.twitter.com/widgets.js";
-							fjs.parentNode.insertBefore(js,fjs);
-						}
-					}(document,"script","twitter-wjs");
 		!= haml :footer
 
--# Copyright (C) 2012 by TADA Tadashi <t@tdtds.jp>
+-# Copyright (C) 2013 by TADA Tadashi <t@tdtds.jp>
