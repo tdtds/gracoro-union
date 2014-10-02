@@ -8,5 +8,6 @@ class Tweet
 	include Mongoid::Document
 
 	field :name, type: String
+	field :icon, type: String
 	field :text, type: String
 end

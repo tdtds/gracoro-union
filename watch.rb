@@ -26,17 +26,17 @@ begin
 	}.track( search_string ) do |status|
 		begin
 			next if /@\S/ === status.text # skipping replies included.
-			person = Person.where( name: status.user[:screen_name] ).first ||
-				Person::create( name: status.user[:screen_name], count: 0 )
+			person = Person.where( name: status.user.screen_name ).first ||
+				Person::create( name: status.user.screen_name, count: 0 )
 			person.count += status.text.scan(/#{search_string}/).size
-			person.icon = status.user[:profile_image_url]
+			person.icon = status.user.profile_image_url
 			person.save
 			Tweet::create(
 				_id: status.id,
-				name: status.user[:screen_name],
-				icon: status.user[:profile_image_url],
+				name: status.user.screen_name,
+				icon: status.user.profile_image_url,
 				text: status.text ).save
-			p status.user[:screen_name]
+			p status.user.screen_name
 		rescue
 			p "ERROR: #$!"
 		end
