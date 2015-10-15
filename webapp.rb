@@ -5,7 +5,7 @@
 # Copyright (C) 2011 by TADA Tadashi <t@tdtds.jp>
 #
 
-require 'rubygems'
+Bundler.require
 require 'sinatra/base'
 require 'haml'
 require 'json'

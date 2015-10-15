@@ -4,6 +4,7 @@
 #
 # Copyright (C) 2011 by TADA Tadashi <t@tdtds.jp>
 #
+Bundler.require
 require 'tweetstream'
 require './lib/connect'
 require './lib/tweet'
