@@ -19,17 +19,21 @@ TweetStream.configure do |config|
 	config.auth_method = :oauth
 end
 
-search_string = '#gracoro_union'
+search_strings = if ENV['RACK_ENV'] == 'production'
+						  %w(#gracoro_union #グラコロ同盟)
+					  else
+							%w(ruby rails)
+					  end
 
 begin
 	TweetStream::Client::new.on_error {|message|
 		puts message
-	}.track( search_string ) do |status|
+	}.track( *search_strings ) do |status|
 		begin
 			next if /@\S/ === status.text # skipping replies included.
 			person = Person.where( name: status.user.screen_name ).first ||
 				Person::create( name: status.user.screen_name, count: 0 )
-			person.count += status.text.scan(/#{search_string}/).size
+			person.count += status.text.scan(/#{search_strings.join('|')}/).size
 			person.icon = status.user.profile_image_url
 			person.save
 			Tweet::create(
