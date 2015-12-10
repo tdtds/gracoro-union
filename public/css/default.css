@@ -15,13 +15,28 @@ body {
 	text-align: center;
 }
 
+body.index {
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	-webkit-align-items: center;
+	box-sizing: border-box;
+}
+
 h1 img {
 	border-radius: 0px 0px 8px 8px;
+	max-width: 900px;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 #header {
 	overflow: hidden;
-	width: 900px;
+	box-sizing: border-box;
+	max-width: 900px;
+	width: 100%;
 	margin: 0px auto;
 	margin-top: 8px;
 	margin-bottom: 16px;
@@ -31,17 +46,22 @@ h1 img {
 	border-radius: 8px;
 }
 
-#header:after {
-	content: "";
-	display: block;
-	clear: both;
-	height: 1px;
-	overflow: hidden;
+body.index #header {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	align-items: flex-end;
+	-webkit-align-items: flex-end;
 }
 
-#description {
-	float: left;
-	margin-right: 16px;
+@media screen and (max-width: 900px) {
+	body.index #header {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		align-items: center;
+		-webkit-align-items: center;
+	}
 }
 
 #description p {
@@ -53,15 +73,10 @@ h1 img {
 	color: red;
 }
 
-#tweet-button {
-	margin-left: 570px;
-	padding: 16px;
-	text-align: center;
-}
-
 #main {
-	overflow: hidden;
-	width: 900px;
+	box-sizing: border-box;
+	max-width: 900px;
+	width: 100%;
 	margin: 0px auto;
 	margin-top: 8px;
 	padding: 16px;
@@ -70,17 +85,27 @@ h1 img {
 	border-radius: 8px;
 }
 
-#main:after {
-	content: "";
-	display: block;
-	clear: both;
-	height: 1px;
-	overflow: hidden;
+body.index #main {
+	display: flex;
+	-webkit-display: flex;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+	align-items: flex-start;
+	-webkit-align-items: flex-start;
+}
+
+@media screen and (max-width: 900px) {
+	body.index #main {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		align-items: center;
+		-webkit-align-items: center;
+	}
 }
 
 #ranking {
-	float: left;
-	width: 560px;
+	flex-grow: 2;
+	-webkit-flex-grow: 2;
 	height: auto;
 	margin-right: 16px;
 }
@@ -135,7 +160,8 @@ div#ranking.archive {
 }
 
 #widget {
-	margin-left: 580px;
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
 	text-align: center;
 }
 
@@ -158,6 +184,7 @@ div#ranking.archive {
 }
 
 #footer {
+	width: 100%;
 	margin-top: 16px;
 	text-align: left;
 	background-color: #333;
