@@ -94,15 +94,6 @@ body.index #main {
 	-webkit-align-items: flex-start;
 }
 
-@media screen and (max-width: 900px) {
-	body.index #main {
-		flex-direction: column;
-		-webkit-flex-direction: column;
-		align-items: center;
-		-webkit-align-items: center;
-	}
-}
-
 #ranking {
 	flex-grow: 2;
 	-webkit-flex-grow: 2;
@@ -163,6 +154,25 @@ div#ranking.archive {
 	flex-grow: 1;
 	-webkit-flex-grow: 1;
 	text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+	body.index #main {
+		flex-direction: column;
+		-webkit-flex-direction: column;
+		align-items: center;
+		-webkit-align-items: center;
+	}
+	body.index #ranking {
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+		margin-bottom: 2em;
+	}
+	body.index #widget {
+		-webkit-flex-grow: 1;
+		flex-grow: 1;
+		width: 100%;
+	}
 }
 
 #main dl {
