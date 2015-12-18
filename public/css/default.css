@@ -221,6 +221,11 @@ div#ranking.archive {
 	list-style-type: none;
 }
 
+.footer-item li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .footer-item a {
 	color: #ddd;
 	text-decoration: none;
