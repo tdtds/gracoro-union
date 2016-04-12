@@ -7,6 +7,6 @@ raise StandardError::new( 'no TWITTER_CONSUMER_SECRET' ) unless ENV['TWITTER_CON
 raise StandardError::new( 'no TWITTER_OAUTH_TOKEN' ) unless ENV['TWITTER_OAUTH_TOKEN']
 raise StandardError::new( 'no TWITTER_OAUTH_TOKEN_SECRET' ) unless ENV['TWITTER_OAUTH_TOKEN_SECRET']
 
-uri = ENV['MONGOLAB_URI'] || 'mongodb://localhost:27017/gracoro_union'
+uri = ENV['MONGODB_URI'] || ENV['MONGOLAB_URI'] || 'mongodb://localhost:27017/gracoro_union'
 Mongo::Logger.level = Logger::WARN
 Mongoid::Config.load_configuration({clients: {default: {uri: uri}}})
