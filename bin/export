@@ -1,5 +1,5 @@
 #!/usr/bin/zsh
-source =(heroku config --app gracoro-union | grep MONGOLAB_URI | ruby -ne '
+source =(heroku config --app gracoro-union | grep -e MONGODB_URI -e MONGOLAB_URI | ruby -ne '
 	x,x,user,pass,host,port,db, = $_.split %r|[:@/]+|
 	puts "user=#{user}"
 	puts "pass=#{pass}"
