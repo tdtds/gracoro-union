@@ -11,7 +11,7 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     addressable (2.4.0)
-    bson (4.0.4)
+    bson (4.1.0)
     bson_ext (1.5.1)
     buftok (0.2.0)
     builder (3.2.2)
