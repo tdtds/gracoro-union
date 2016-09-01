@@ -18,7 +18,7 @@ GEM
     coderay (1.1.1)
     cookiejar (0.3.3)
     daemons (1.2.4)
-    domain_name (0.5.20160615)
+    domain_name (0.5.20160826)
       unf (>= 0.0.5, < 1.0.0)
     em-http-request (1.1.5)
       addressable (>= 2.3.4)
