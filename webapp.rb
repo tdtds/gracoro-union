@@ -16,6 +16,11 @@ require './lib/person'
 class GracoroUnion < Sinatra::Base
 	set :haml, { format: :html5, escape_html: true }
 
+	configure :development, :test do
+		require 'dotenv'
+		Dotenv.load
+	end
+
 	get '/' do
 		haml :index
 	end

@@ -11,4 +11,5 @@ gem 'haml'
 
 group :development, :test do
 	gem 'pry'
+	gem 'dotenv', require: 'dotenv'
 end
