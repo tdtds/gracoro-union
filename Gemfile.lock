@@ -71,7 +71,7 @@ GEM
       method_source (~> 0.8.1)
       slop (~> 3.4)
     public_suffix (2.0.4)
-    rack (1.6.4)
+    rack (1.6.5)
     rack-protection (1.5.3)
       rack
     simple_oauth (0.3.1)
@@ -120,9 +120,6 @@ DEPENDENCIES
   sinatra
   thin
   tweetstream
-
-RUBY VERSION
-   ruby 2.3.2p217
 
 BUNDLED WITH
    1.13.6
