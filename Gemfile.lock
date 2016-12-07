@@ -21,6 +21,7 @@ GEM
     daemons (1.2.4)
     domain_name (0.5.20161129)
       unf (>= 0.0.5, < 1.0.0)
+    dotenv (2.1.1)
     em-http-request (1.1.5)
       addressable (>= 2.3.4)
       cookiejar (!= 0.3.1)
@@ -114,6 +115,7 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext
+  dotenv
   haml
   mongoid (~> 5.0)
   pry

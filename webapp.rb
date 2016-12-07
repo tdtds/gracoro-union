@@ -5,7 +5,9 @@
 # Copyright (C) 2011 by TADA Tadashi <t@tdtds.jp>
 #
 
-Bundler.require
+Bundler.require(:default, ENV['RACK_ENV'] || :development)
+Dotenv.load if defined?(Dotenv)
+
 require 'sinatra/base'
 require 'haml'
 require 'json'
