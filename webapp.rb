@@ -9,14 +9,13 @@ Bundler.require(:default, ENV['RACK_ENV'] || :development)
 Dotenv.load if defined?(Dotenv)
 
 require 'sinatra/base'
-require 'haml'
 require 'json'
 
 require './lib/connect'
 require './lib/person'
 
 class GracoroUnion < Sinatra::Base
-	set :haml, { format: :html5, escape_html: true }
+	set :haml, {format: :html5}
 
 	get '/' do
 		haml :index
