@@ -25,7 +25,7 @@ class GracoroUnion < Sinatra::Base
 		haml :rule
 	end
 
-	get %r|/(\d{4})$| do
+	get %r|/(\d{4})| do
 		@year = params[:captures].first
 		begin
 			haml :archive
