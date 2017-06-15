@@ -81,7 +81,7 @@ GEM
       tilt (~> 2.0)
     slop (3.6.0)
     temple (0.8.0)
-    thin (1.7.0)
+    thin (1.7.1)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
