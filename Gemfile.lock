@@ -10,7 +10,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
-    bson (4.2.1)
+    bson (4.2.2)
     bson_ext (1.5.1)
     buftok (0.2.0)
     coderay (1.1.1)
