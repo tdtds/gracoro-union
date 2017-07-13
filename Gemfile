@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 ruby '~> 2.4.1'
 
 gem 'sinatra'
-gem 'thin'
+gem 'puma'
 gem 'tweetstream'
 gem 'mongoid', '~> 6.0', require: 'mongoid'
 gem "bson_ext"
