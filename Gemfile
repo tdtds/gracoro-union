@@ -5,7 +5,7 @@ ruby '~> 2.5.0'
 gem 'sinatra'
 gem 'puma'
 gem 'tweetstream'
-gem 'mongoid', '~> 6.0', require: 'mongoid'
+gem 'mongoid', '~> 7.0', require: 'mongoid'
 gem "bson_ext"
 gem 'hamlit', require: 'hamlit'
 
