@@ -120,5 +120,8 @@ DEPENDENCIES
   sinatra
   tweetstream
 
+RUBY VERSION
+   ruby 2.5.2p104
+
 BUNDLED WITH
-   1.16.1
+   1.16.6
