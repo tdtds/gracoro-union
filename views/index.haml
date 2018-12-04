@@ -1,7 +1,7 @@
 !!!
 %html
 	%head
-		%title グラコロ同盟
+		%title グラコロ同盟2018
 		%meta{name: "viewport", content: "width=device-width,initial-scale=1"}
 		%meta{property: 'og:image', content: 'http://gracoro.tdtds.jp/img/og-image.jpg'}
 		%link{rel: 'stylesheet', href: '/css/default.css', type: 'text/css', media: 'all'}
@@ -20,7 +20,7 @@
 				fjs.parentNode.insertBefore(js, fjs);
 			}(document, 'script', 'facebook-jssdk'));
 		%h1
-			%img{src: '/img/gracoro_union2017.jpg', alt: 'グラコロ同盟2017'}
+			%img{src: '/img/gracoro_union2018.jpg', alt: 'グラコロ同盟2018'}
 		#header
 			#description
 				%p
@@ -28,12 +28,37 @@
 					(旧称「グラタンコロッケバーガー」)が大好きな人たちによるコミュニティです。
 					シーズン中はただひたすらグラコロを食べ、報告しあい、その数を競い合っています。
 				%p
-					2017年シーズンは終了しました。同盟員は次の冬を心待ちにしているところです。
-					活動結果は
-					%a{href: '/2017'}<こちら
-					をご覧ください。
+					ハッシュタグ「#グラコロ同盟」をつけてつぶやくだけで、どなたでも参加できます。
+					幸せな冬の数週間をいっしょに楽しみましょう！
 				%p
 					(※なお当同盟は日本マクドナルドとは無関係の非公式コミュニティです)
-		!= haml :footer
+			#tweet-button
+				%p
+					%a{href: 'https://twitter.com/intent/tweet?hashtags=グラコロ同盟&text=グラコロ食べたよ！&url=http%3A%2F%2Fgracoro.tdtds.jp', target: '_blank'}
+						%img{src: '/img/tweet.png', alt: 'Twitterで「グラコロ食べたよ!」とつぶやく'}
+		#main
+			#ranking
+				%h2 今期のランキング
+				%ol
+					- ranking( 300 ) do |person, index|
+						%li{class: index < 10 ? 'show' : 'hide'}
+							%a{href: "http://twitter.com/#{person.name}"}
+								%img{src: "#{person.icon ? person.icon : 'http://a0.twimg.com/sticky/default_profile_images/default_profile_3_normal.png'}", alt: person.name}
+							%div
+								- person.count.times do |i|
+									%img{src: '/img/gracoro20x20.png', alt: ''}
+								%span= person.count
+			#widget
+				%a.twitter-timeline{href: 'https://twitter.com/hashtag/%E3%82%B0%E3%83%A9%E3%82%B3%E3%83%AD%E5%90%8C%E7%9B%9F', 'data-widget-id'=>'674878024295145472', 'data-chrome'=>'nofooter', 'data-related'=>'グラコロ同盟'}<リアルタイム活動状況
+				:javascript
+					!function(d,s,id){
+						var js, fjs=d.getElementsByTagName(s)[0], p=/^http:/.test(d.location)?'http':'https';
+						if(!d.getElementById(id)){
+							js=d.createElement(s);
+							js.id=id;
+							js.src=p+"://platform.twitter.com/widgets.js";
+							fjs.parentNode.insertBefore(js,fjs);
+						}
+					}(document,"script","twitter-wjs");		!= haml :footer
 
--# Copyright (C) 2018 by TADA Tadashi <t@tdtds.jp>
+-# Copyright (C) 2018 by Tada, Tadashi <t@tdtds.jp>
