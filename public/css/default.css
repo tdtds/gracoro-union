@@ -95,8 +95,6 @@ body.index #main {
 }
 
 #ranking {
-	flex-grow: 2;
-	-webkit-flex-grow: 2;
 	height: auto;
 	margin-right: 16px;
 }
@@ -148,12 +146,6 @@ body.index #main {
 
 div#ranking.archive {
 	width: 100%;
-}
-
-#widget {
-	flex-grow: 1;
-	-webkit-flex-grow: 1;
-	text-align: center;
 }
 
 @media screen and (max-width: 900px) {
