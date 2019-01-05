@@ -6,5 +6,5 @@ source =(heroku config --app gracoro-union | grep -e MONGODB_URI -e MONGOLAB_URI
 	puts "host=#{host}:#{port}"
 	puts "db=#{db}"
 ')
-mongoexport -h $host -u $user -p $pass -d $db -c people --jsonArray > people.json
-mongoexport -h $host -u $user -p $pass -d $db -c tweets --jsonArray > tweets.json
+docker run --rm mongo mongoexport --quiet -h $host -u $user -p $pass -d $db -c people --jsonArray --pretty > data/people.json
+docker run --rm mongo mongoexport --quiet -h $host -u $user -p $pass -d $db -c tweets --jsonArray --pretty > data/tweets.json
