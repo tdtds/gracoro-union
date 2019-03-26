@@ -19,7 +19,7 @@ GEM
     daemons (1.2.6)
     domain_name (0.5.20180417)
       unf (>= 0.0.5, < 1.0.0)
-    dotenv (2.7.1)
+    dotenv (2.7.2)
     em-http-request (1.1.5)
       addressable (>= 2.3.4)
       cookiejar (!= 0.3.1)
