@@ -15,6 +15,12 @@ require './lib/connect'
 require './lib/person'
 
 class GracoroUnion < Sinatra::Base
+	if ENV['SEASON'] && !ENV['SEASON'].empty?
+		SEASON = ENV['SEASON']
+	else
+		SEASON = nil
+	end
+
 	set :haml, {format: :html5}
 
 	get '/' do
