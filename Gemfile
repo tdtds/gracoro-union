@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '~> 2.6.5'
+ruby '~> 2.7.0'
 
 gem 'sinatra'
 gem 'puma'
@@ -10,6 +10,5 @@ gem "bson_ext"
 gem 'hamlit', require: 'hamlit'
 
 group :development, :test do
-	gem 'pry'
 	gem 'dotenv', require: 'dotenv'
 end
