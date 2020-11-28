@@ -1,8 +1,7 @@
 {
   "name": "gracoro-union",
   "addons": [
-    "logentries",
-    "mongolab"
+    "logentries"
   ],
   "env": {
     "TWITTER_CONSUMER_KEY": {
