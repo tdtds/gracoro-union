@@ -2,11 +2,10 @@
 %html
 	%head
 		%title グラコロ同盟 #{@year}
-		%meta{property: 'og:image', content: 'http://gracoro.tdtds.jp/img/og-image.jpg'}
+		%meta{property: 'og:image', content: 'https://gracoro.tdtds.jp/img/og-image.jpg'}
 		%link{rel: 'stylesheet', href: '/css/default.css', type: 'text/css', media: 'all'}
 		%link{rel: 'icon', href: '/img/gracoro20x20.png'}
-		%script{src: 'http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'}
-		%script{src: 'http://widgets.twimg.com/j/2/widget.js'}
+		%script{src: 'https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'}
 	%body
 		#fb-root
 		:javascript
@@ -29,7 +28,7 @@
 					- ranking_archive( @year ) do |person, index|
 						- next if person['count'] < 1
 						%li{class: 'show'}
-							%a{href: "http://twitter.com/#{person['name']}"}
+							%a{href: "https://twitter.com/#{person['name']}"}
 								%img{src: person['icon'], alt: person['name']}
 							%div
 								- person['count'].times do |i|
