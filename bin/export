@@ -1,10 +1,3 @@
 #!/usr/bin/zsh
-source =(heroku config --app gracoro-union | grep -e MONGODB_URI -e MONGOLAB_URI | ruby -ne '
-	x,x,user,pass,host,port,db, = $_.split %r|[:@/]+|
-	puts "user=#{user}"
-	puts "pass=#{pass}"
-	puts "host=#{host}:#{port}"
-	puts "db=#{db}"
-')
-docker run --rm mongo mongoexport --quiet -h $host -u $user -p $pass -d $db -c people --jsonArray --pretty > data/people.json
-docker run --rm mongo mongoexport --quiet -h $host -u $user -p $pass -d $db -c tweets --jsonArray --pretty > data/tweets.json
+mongoexport --quiet --uri="`heroku config:get MONGODB_URI`" -c people --jsonArray --pretty > data/people.json
+mongoexport --quiet --uri="`heroku config:get MONGODB_URI`" -c tweets --jsonArray --pretty > data/tweets.json
