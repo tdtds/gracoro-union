@@ -36,6 +36,7 @@ class GracoroUnion < Sinatra::Base
 		begin
 			haml :archive
 		rescue Errno::ENOENT
+			p $!
 			return 404
 		end
 	end
