@@ -10,6 +10,7 @@ GEM
       tzinfo (~> 2.0)
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    base64 (0.2.0)
     bson (4.15.0)
     bson_ext (1.5.1)
     buftok (0.2.0)
@@ -71,19 +72,20 @@ GEM
     puma (6.3.1)
       nio4r (~> 2.0)
     rack (2.2.8)
-    rack-protection (3.0.4)
-      rack
+    rack-protection (3.2.0)
+      base64 (>= 0.1.0)
+      rack (~> 2.2, >= 2.2.4)
     ruby2_keywords (0.0.5)
     simple_oauth (0.3.1)
-    sinatra (3.0.5)
+    sinatra (3.2.0)
       mustermann (~> 3.0)
       rack (~> 2.2, >= 2.2.4)
-      rack-protection (= 3.0.5)
+      rack-protection (= 3.2.0)
       tilt (~> 2.0)
     temple (0.9.1)
     thor (1.2.1)
     thread_safe (0.3.6)
-    tilt (2.0.11)
+    tilt (2.3.0)
     tweetstream (2.6.1)
       daemons (~> 1.1)
       em-http-request (>= 1.1.1)
@@ -108,7 +110,7 @@ GEM
     unf_ext (0.0.7.7)
 
 PLATFORMS
-  ruby
+  x86_64-linux
 
 DEPENDENCIES
   bson_ext
