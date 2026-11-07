@@ -51,10 +51,29 @@ def fetch(name, raw_dir):
     return html
 
 
+# 絶対パス (/css/... 等) はドメイン直下でしか通用せず、GitHub Pages の
+# プロジェクト配下 (tdtds.github.io/gracoro-union/) のステージングで壊れる。
+# 全ページがサイトルートと同階層にあるため、相対パスに統一する。
+RELATIVIZE = [
+    ("href='/css/", "href='css/"),
+    ("href='/img/", "href='img/"),
+    ("src='/img/", "src='img/"),
+    ("src='/js/", "src='js/"),
+    ("href='/rule'", "href='rule'"),
+    ("href='/'", "href='./'"),
+]
+
+
+def relativize(html):
+    for a, b in RELATIVIZE:
+        html = html.replace(a, b)
+    return html
+
+
 def clean(html):
     for pat, rep in CLEAN_PATTERNS:
         html = pat.sub(rep, html)
-    return html
+    return relativize(html)
 
 
 def extract_footer(html):
@@ -174,7 +193,7 @@ RANKING_JS = """/*
       a.target = '_blank';
       a.rel = 'noopener';
       var img = document.createElement('img');
-      img.src = person.avatar || '/img/gracoro200x200.png';
+      img.src = person.avatar || 'img/gracoro200x200.png';
       img.alt = person.handle;
       img.width = 48;
       img.height = 48;
@@ -192,7 +211,7 @@ RANKING_JS = """/*
       icons.className = 'icons';
       var html = '';
       for (var i = 0; i < person.count; i++) {
-        html += '<img src="/img/gracoro20x20.png" alt="">';
+        html += '<img src="img/gracoro20x20.png" alt="">';
       }
       icons.innerHTML = html;
       div.appendChild(icons);
@@ -310,9 +329,10 @@ def main():
         if name == "rule":
             footer = extract_footer(html)
 
-    index = INDEX_TEMPLATE.replace("__FOOTER__", footer)
+    index = relativize(INDEX_TEMPLATE.replace("__FOOTER__", footer))
     (site_dir / "index.html").write_text(index, encoding="utf-8")
-    (site_dir / "404.html").write_text(NOT_FOUND, encoding="utf-8")
+    (site_dir / "404.html").write_text(relativize(NOT_FOUND), encoding="utf-8")
+    (base / "tools" / "footer.html").write_text(footer + "\n", encoding="utf-8")
     (site_dir / "js" / "ranking.js").write_text(RANKING_JS, encoding="utf-8")
     (site_dir / "css" / "site.css").write_text(SITE_CSS, encoding="utf-8")
     (site_dir / "CNAME").write_text("gracoro.tdtds.jp\n", encoding="utf-8")

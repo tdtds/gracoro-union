@@ -25,12 +25,12 @@ PAGE = """<!DOCTYPE html>
 <head>
 <title>グラコロ同盟 {year}</title>
 <meta content='https://gracoro.tdtds.jp/img/og-image.jpg' property='og:image'>
-<link href='/css/default.css' media='all' rel='stylesheet' type='text/css'>
-<link href='/img/gracoro20x20.png' rel='icon'>
+<link href='css/default.css' media='all' rel='stylesheet' type='text/css'>
+<link href='img/gracoro20x20.png' rel='icon'>
 </head>
 <body>
 <h1>
-<img alt='グラコロ同盟{year}' src='/img/gracoro_union{year}.jpg'>
+<img alt='グラコロ同盟{year}' src='img/gracoro_union{year}.jpg'>
 </h1>
 <div id='header'>
 <div id='description'>
@@ -58,7 +58,7 @@ ITEM = """<li class='show'>
 </div>
 </li>"""
 
-ICON = "<img alt='' src='/img/gracoro20x20.png'>\n"
+ICON = "<img alt='' src='img/gracoro20x20.png'>\n"
 
 
 def intro_html(year):

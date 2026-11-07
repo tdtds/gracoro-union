@@ -44,7 +44,7 @@
       a.target = '_blank';
       a.rel = 'noopener';
       var img = document.createElement('img');
-      img.src = person.avatar || '/img/gracoro200x200.png';
+      img.src = person.avatar || 'img/gracoro200x200.png';
       img.alt = person.handle;
       img.width = 48;
       img.height = 48;
@@ -62,7 +62,7 @@
       icons.className = 'icons';
       var html = '';
       for (var i = 0; i < person.count; i++) {
-        html += '<img src="/img/gracoro20x20.png" alt="">';
+        html += '<img src="img/gracoro20x20.png" alt="">';
       }
       icons.innerHTML = html;
       div.appendChild(icons);
