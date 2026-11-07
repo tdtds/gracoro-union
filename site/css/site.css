@@ -1,0 +1,33 @@
+/*
+ * site.css : 静的化にあたって追加した補正 (default.css は原形のまま残す)
+ */
+
+/* ランキング見出しの集計サマリには (個) の装飾を付けない */
+#ranking h2 span.summary {
+  font-size: small;
+  font-weight: normal;
+}
+#ranking h2 span.summary:before { content: ""; }
+#ranking h2 span.summary:after { content: ""; }
+
+/* ランキングの表示名と状態表示 */
+#ranking .pname {
+  font-size: medium;
+  font-weight: bold;
+}
+#ranking .pname:before { content: ""; }
+#ranking .pname:after { content: ""; }
+#ranking span.icons:before { content: ""; }
+#ranking span.icons:after { content: ""; }
+
+#ranking-status {
+  margin-top: 8px;
+  color: #555;
+  font-size: small;
+}
+
+#ranking .ranking-note {
+  margin-top: 16px;
+  color: #555;
+  font-size: small;
+}
