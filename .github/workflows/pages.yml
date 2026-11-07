@@ -1,0 +1,45 @@
+name: Deploy static site to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - "site/**"
+      - "public/css/**"
+      - "public/img/**"
+      - "tools/**"
+      - "views/archive*.haml"
+      - "data/people.*.json"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Assemble site
+        run: |
+          mkdir -p _site/css _site/img
+          cp -r site/. _site/
+          cp public/css/default.css _site/css/
+          cp -r public/img/. _site/img/
+          python3 tools/build_archives.py --out-dir _site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4
