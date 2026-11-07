@@ -1,3 +1,5 @@
 .bundle
 .env
 .ruby-version
+tools/raw_live/
+_site/
