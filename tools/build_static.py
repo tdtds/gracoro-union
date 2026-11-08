@@ -85,6 +85,7 @@ def extract_footer(html):
 INDEX_TEMPLATE = """<!DOCTYPE html>
 <html>
 <head>
+<meta charset='utf-8'>
 <title>グラコロ同盟2026</title>
 <meta content='width=device-width,initial-scale=1' name='viewport'>
 <meta content='https://gracoro.tdtds.jp/img/og-image.jpg' property='og:image'>
@@ -245,10 +246,13 @@ RANKING_JS = """/*
 """
 
 SITE_CSS = """/*
- * site.css : 静的化にあたって追加した補正 (default.css は原形のまま残す)
+ * site.css : 静的化にあたっての補正 + 2026年デザイン刷新レイヤー
+ * default.css (2011年の原形) の上書きとして読み込む。
+ * 方針: 温かみのあるオレンジを基調に、書体と余白と階層を現代化する。
+ * 端末がダークモードのときは、温かい暗色に追従する。
  */
 
-/* ランキング見出しの集計サマリには (個) の装飾を付けない */
+/* ---- ランキング見出し・表示名まわり（従来の補正） ---- */
 #ranking h2 span.summary {
   font-size: small;
   font-weight: normal;
@@ -256,7 +260,6 @@ SITE_CSS = """/*
 #ranking h2 span.summary:before { content: ""; }
 #ranking h2 span.summary:after { content: ""; }
 
-/* ランキングの表示名と状態表示 */
 #ranking .pname {
   font-size: medium;
   font-weight: bold;
@@ -277,14 +280,197 @@ SITE_CSS = """/*
   color: #555;
   font-size: small;
 }
+
+/* ---- 書体と地の色 ---- */
+body {
+  font-family: "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Noto Sans JP",
+    "Yu Gothic UI", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.8;
+  color: #2b2118;
+  background: linear-gradient(165deg, #f9a94e 0%, #f07c00 48%, #df6500 100%);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection { background: #ffd9a3; }
+
+a { color: #b35400; text-underline-offset: 3px; }
+a:hover { color: #f07c00; }
+a:focus-visible { outline: 3px solid #ffb066; outline-offset: 2px; }
+
+/* ---- カードの質感 ---- */
+h1 img {
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 12px 32px rgba(96, 42, 0, 0.28);
+}
+
+#header {
+  background-color: #fff7ea;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(96, 42, 0, 0.18);
+}
+
+#main {
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(96, 42, 0, 0.18);
+}
+
+#main h2, #header h2 {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  border-left: 6px solid #f07c00;
+  padding-left: 0.55em;
+  margin-bottom: 0.6em;
+}
+
+#main dt { color: #a34d00; }
+
+/* ---- ランキング行 ---- */
+#ranking ol {
+  margin-left: 0;
+  counter-reset: rank;
+}
+
+#ranking li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  overflow: visible;
+  margin-bottom: 2px;
+  padding: 10px 12px;
+  border-radius: 12px;
+}
+#ranking li:after { content: none; }
+#ranking li:nth-child(odd) { background: rgba(240, 124, 0, 0.055); }
+#ranking li:hover { background: rgba(240, 124, 0, 0.11); }
+
+#ranking li::before {
+  counter-increment: rank;
+  content: counter(rank);
+  flex: 0 0 auto;
+  width: 28px;
+  height: 28px;
+  margin-top: 8px;
+  border-radius: 50%;
+  background: #e8790a;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 28px;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+#ranking li:nth-child(1)::before { background: linear-gradient(160deg, #eec21a, #c99600); }
+#ranking li:nth-child(2)::before { background: linear-gradient(160deg, #c3cbd1, #8f979e); }
+#ranking li:nth-child(3)::before { background: linear-gradient(160deg, #d59a58, #a56a35); }
+#ranking li:nth-child(1) { background: rgba(238, 194, 26, 0.13); }
+#ranking li:nth-child(2) { background: rgba(160, 170, 178, 0.13); }
+#ranking li:nth-child(3) { background: rgba(213, 154, 88, 0.14); }
+
+#ranking li a {
+  float: none;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border-radius: 50%;
+  background: #f6ddba;
+  font-size: 10px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #a34d00;
+  overflow: hidden;
+}
+#ranking li a img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+#ranking div { margin-left: 0; flex: 1 1 auto; min-width: 0; }
+#ranking .icons img { vertical-align: -3px; }
+#ranking div > span:last-child {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: #a34d00;
+}
+
+
+/* ランキング内の本文リンク・全表示リンクはアバター用ルールの対象外にする */
+#ranking p a {
+  display: inline;
+  float: none;
+  width: auto;
+  font-weight: inherit;
+}
+#ranking a.showall {
+  display: inline-block;
+  float: none;
+  width: auto;
+  margin: 8px 0 0 44px;
+  font-weight: 700;
+}
+
+/* ---- フッター ---- */
+#footer {
+  background-color: #2e1d12;
+  margin-top: 24px;
+}
+.footer-item h2 { color: #ffb066; font-size: 0.95rem; letter-spacing: 0.04em; }
+.footer-item a { color: #f3e3d3; }
+
+/* ---- 狭い画面 ---- */
+@media screen and (max-width: 640px) {
+  #header, #main { padding: 16px; border-radius: 12px; }
+  h1 img { border-radius: 0 0 12px 12px; }
+  #main dl { margin: 16px 4px 32px 4px; }
+  #main dd { margin-left: 20px; }
+  #ranking li { gap: 10px; padding: 8px; }
+  #ranking li::before { width: 24px; height: 24px; line-height: 24px; font-size: 0.78rem; }
+  .footer-item { margin-right: 16px; margin-left: 16px; }
+}
+
+/* ---- ダークモード ---- */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #f3e9df;
+    background: linear-gradient(165deg, #3a2312 0%, #251509 55%, #180d05 100%);
+  }
+  ::selection { background: #7a4a17; }
+  a { color: #ffa54d; }
+  a:hover { color: #ffc07d; }
+
+  #header { background-color: #2d1e13; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45); }
+  #main { background-color: #261a11; box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45); }
+  #main dt { color: #ffb066; }
+
+  #ranking-status, #ranking .ranking-note { color: #cdb49c; }
+  #ranking li:nth-child(odd) { background: rgba(255, 150, 60, 0.06); }
+  #ranking li:hover { background: rgba(255, 150, 60, 0.12); }
+  #ranking li:nth-child(1) { background: rgba(238, 194, 26, 0.13); }
+  #ranking li:nth-child(2) { background: rgba(190, 198, 205, 0.12); }
+  #ranking li:nth-child(3) { background: rgba(213, 154, 88, 0.15); }
+  #ranking div > span:last-child { color: #ffb066; }
+  #ranking li a { background: #4a3220; }
+  #description p.alert { color: #ff9d8a; }
+
+  #footer { background-color: #140b05; }
+}
 """
 
 NOT_FOUND = """<!DOCTYPE html>
 <html>
 <head>
+<meta charset='utf-8'>
 <title>ページが見つかりません - グラコロ同盟</title>
 <meta content='width=device-width,initial-scale=1' name='viewport'>
 <link href='/css/default.css' media='all' rel='stylesheet' type='text/css'>
+<link href='/css/site.css' media='all' rel='stylesheet' type='text/css'>
 <link href='/img/gracoro20x20.png' rel='icon'>
 </head>
 <body>
@@ -323,6 +509,15 @@ def main():
     footer = None
     for name in ["rule"] + [str(y) for y in ARCHIVE_YEARS]:
         html = clean(fetch(name, raw_dir))
+        if name == "rule":
+            # ルールページにも文字コード指定とデザイン刷新レイヤーを適用する
+            html = html.replace("<head>", "<head>\n<meta charset='utf-8'>", 1)
+            html = html.replace(
+                "<link href='css/default.css' media='all' rel='stylesheet' type='text/css'>",
+                "<link href='css/default.css' media='all' rel='stylesheet' type='text/css'>\n"
+                "<link href='css/site.css' media='all' rel='stylesheet' type='text/css'>",
+                1,
+            )
         out = site_dir / f"{name}.html"
         out.write_text(html, encoding="utf-8")
         print(f"wrote {out} ({len(html)} bytes)")

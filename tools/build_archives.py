@@ -23,9 +23,11 @@ A_TAG = re.compile(r"^%a\{href: '([^']+)'(, target: '_blank')?\}<(.*)$")
 PAGE = """<!DOCTYPE html>
 <html>
 <head>
+<meta charset='utf-8'>
 <title>グラコロ同盟 {year}</title>
 <meta content='https://gracoro.tdtds.jp/img/og-image.jpg' property='og:image'>
 <link href='css/default.css' media='all' rel='stylesheet' type='text/css'>
+<link href='css/site.css' media='all' rel='stylesheet' type='text/css'>
 <link href='img/gracoro20x20.png' rel='icon'>
 </head>
 <body>
