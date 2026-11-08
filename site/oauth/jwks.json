@@ -1,0 +1,15 @@
+{
+  "keys": [
+    {
+      "kty": "EC",
+      "alg": "ES256",
+      "kid": "gracoro-2026-1",
+      "key_ops": [
+        "verify"
+      ],
+      "crv": "P-256",
+      "x": "DOaNeZdqDRBGgTvm7l5wHfcELgwMB7g2uN_4S_sxWXY",
+      "y": "VABPbxOHH5Z26gxt8EnYyIO5NzUDeUah7DFJtlkuARo"
+    }
+  ]
+}

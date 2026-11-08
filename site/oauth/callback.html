@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>認証コードの受け渡し | グラコロ同盟</title>
+<style>
+  body { font-family: sans-serif; margin: 2em auto; max-width: 40em; padding: 0 1em; line-height: 1.7; }
+  textarea { width: 100%; box-sizing: border-box; font-size: 0.85em; }
+  button { padding: 0.5em 1.2em; font-size: 1em; }
+  .ok { color: #0a6c03; font-weight: bold; }
+  .err { color: #b00020; font-weight: bold; }
+</style>
+</head>
+<body>
+<h1>グラコロ同盟 ランキング投稿：認証の受け渡し</h1>
+<div id="result">確認中…</div>
+<script>
+  const params = new URLSearchParams(location.search);
+  const box = document.getElementById('result');
+  if (params.get('error')) {
+    box.innerHTML = '<p class="err">認証が完了しませんでした：' +
+      params.get('error') + '</p><p>Muse にこの画面のまま知らせてください。</p>';
+  } else if (params.get('code')) {
+    box.innerHTML = '<p class="ok">認証が承認されました。</p>' +
+      '<p>下のURL全体をコピーして、Muse とのチャットに貼ってください（認証コードは短時間で失効し、このクライアント以外では使えません）。</p>' +
+      '<textarea id="cb" rows="4" readonly></textarea>' +
+      '<p><button id="copy">URLをコピー</button></p>';
+    document.getElementById('cb').value = location.href;
+    document.getElementById('copy').addEventListener('click', async () => {
+      await navigator.clipboard.writeText(location.href);
+      document.getElementById('copy').textContent = 'コピーしました';
+    });
+  } else {
+    box.innerHTML = '<p>認証コードが含まれていません。Muse から渡された認証リンクからやり直してください。</p>';
+  }
+</script>
+</body>
+</html>

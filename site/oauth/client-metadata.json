@@ -1,0 +1,23 @@
+{
+  "redirect_uris": [
+    "https://gracoro.tdtds.jp/oauth/callback"
+  ],
+  "response_types": [
+    "code"
+  ],
+  "grant_types": [
+    "authorization_code",
+    "refresh_token"
+  ],
+  "scope": "atproto repo:app.bsky.feed.post?action=create blob:image/*",
+  "token_endpoint_auth_method": "private_key_jwt",
+  "token_endpoint_auth_signing_alg": "ES256",
+  "jwks_uri": "https://gracoro.tdtds.jp/oauth/jwks.json",
+  "application_type": "web",
+  "subject_type": "public",
+  "authorization_signed_response_alg": "RS256",
+  "client_id": "https://gracoro.tdtds.jp/oauth/client-metadata.json",
+  "client_name": "グラコロ同盟 ランキング投稿",
+  "client_uri": "https://gracoro.tdtds.jp/",
+  "dpop_bound_access_tokens": true
+}
