@@ -2,9 +2,90 @@
   "season": "2026",
   "season_start": "2026-11-25",
   "season_end": null,
-  "generated_at": "2026-11-24T23:49:24+09:00",
-  "participants": 0,
-  "total_count": 0,
-  "counted_posts": 0,
-  "standings": []
+  "generated_at": "2026-11-25T23:49:28+09:00",
+  "participants": 16,
+  "total_count": 26,
+  "counted_posts": 18,
+  "standings": [
+    {
+      "handle": "tanigawa.bsky.social",
+      "display_name": "谷川",
+      "count": 6
+    },
+    {
+      "handle": "daluma-po.bsky.social",
+      "display_name": "DALUMA♪",
+      "count": 4
+    },
+    {
+      "handle": "takkanm.bsky.social",
+      "display_name": "takkanm.bsky.social",
+      "count": 2
+    },
+    {
+      "handle": "anya-i.bsky.social",
+      "display_name": "aya",
+      "count": 2
+    },
+    {
+      "handle": "mininekochip.bsky.social",
+      "display_name": "mininekochip.bsky.social",
+      "count": 1
+    },
+    {
+      "handle": "mizusawa.freelance.ne.jp",
+      "display_name": "水沢祐/T.Azami",
+      "count": 1
+    },
+    {
+      "handle": "yuzupon116.bsky.social",
+      "display_name": "ゆずぽんず",
+      "count": 1
+    },
+    {
+      "handle": "ak2next.bsky.social",
+      "display_name": "ak2next.bsky.social",
+      "count": 1
+    },
+    {
+      "handle": "hs9587.bsky.social",
+      "display_name": "hs9587.bsky.social",
+      "count": 1
+    },
+    {
+      "handle": "rinrinne.bsky.social",
+      "display_name": "りんね / rin_ne",
+      "count": 1
+    },
+    {
+      "handle": "krbshi.bsky.social",
+      "display_name": "くるぶし",
+      "count": 1
+    },
+    {
+      "handle": "nathyxyb52.bsky.social",
+      "display_name": "まじかる☆なっすぃ～🐇🩵♣️ @望月うとと宣伝部青空支部(自称)",
+      "count": 1
+    },
+    {
+      "handle": "minimum2scp.bsky.social",
+      "display_name": "YAMADA Tsuyoshi",
+      "count": 1
+    },
+    {
+      "handle": "tdtds.jp",
+      "display_name": "tdtds / 革小物工房LGTM",
+      "count": 1
+    },
+    {
+      "handle": "nanaitanbo.bsky.social",
+      "display_name": "七井",
+      "count": 1
+    },
+    {
+      "handle": "yamasa.bsky.social",
+      "display_name": "やまさ",
+      "count": 1
+    }
+  ]
 }
