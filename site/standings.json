@@ -2,10 +2,10 @@
   "season": "2026",
   "season_start": "2026-11-25",
   "season_end": null,
-  "generated_at": "2026-11-26T10:48:12+09:00",
-  "participants": 18,
-  "total_count": 36,
-  "counted_posts": 24,
+  "generated_at": "2026-11-26T12:50:06+09:00",
+  "participants": 20,
+  "total_count": 38,
+  "counted_posts": 26,
   "standings": [
     {
       "handle": "tanigawa.bsky.social",
@@ -14,10 +14,10 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gprs2gnb24rb6fwy5q3v53vg/bafkreihhdxm7rgrrwygai6gf45qggk2g3xpoomhjx4o7xujyn2yciyd5lm"
     },
     {
-      "handle": "daluma-po.bsky.social",
-      "display_name": "DALUMA♪",
+      "handle": "ppoi.bsky.social",
+      "display_name": "PPOI",
       "count": 4,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ektv663sn5gs7rf4n7rgotqx/bafkreid754w2ks6du6me5yhqjvmi4xyhq36d3ts6klodt46bfpsdzy2lpq"
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g43cnkwzmxw6zmxhgi66sxy3/bafkreid75k67wbx6ot2pbpibk7ijbqetwptslsr6anu4gqo5qfl7im432u"
     },
     {
       "handle": "takkanm.bsky.social",
@@ -26,10 +26,22 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xe5y6bx434zyuhyho6vklpqt/bafkreia2k27w4scap4zle6nhloalk3iw3z3ug5qhjvwclxwfqggbkdleie"
     },
     {
-      "handle": "ppoi.bsky.social",
-      "display_name": "PPOI",
+      "handle": "daluma-po.bsky.social",
+      "display_name": "DALUMA♪",
       "count": 4,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g43cnkwzmxw6zmxhgi66sxy3/bafkreid75k67wbx6ot2pbpibk7ijbqetwptslsr6anu4gqo5qfl7im432u"
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ektv663sn5gs7rf4n7rgotqx/bafkreid754w2ks6du6me5yhqjvmi4xyhq36d3ts6klodt46bfpsdzy2lpq"
+    },
+    {
+      "handle": "pocketp.bsky.social",
+      "display_name": "ポケ",
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bgvq4aimxqfh3owblzydrscs/bafkreibylod7fvvqwa4dmkxfo476z3m2i2gnsbcyh35onciyyhfsjejysa"
+    },
+    {
+      "handle": "hs9587.bsky.social",
+      "display_name": "hs9587.bsky.social",
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dpboaj6zslupfvh55s745uqh/bafkreido6h6422obpcnci2t5p53dnsqkj3m7lzpmpp46pccvmx3lg2rqlq"
     },
     {
       "handle": "nathyxyb52.bsky.social",
@@ -42,18 +54,6 @@
       "display_name": "aya",
       "count": 2,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2hvobflqc4irfojvvbmmk6a3/bafkreibyjmlc7gb6tr6nh5txzfvd3fm2lp47j3wvamspxoyficlkecunfm"
-    },
-    {
-      "handle": "hs9587.bsky.social",
-      "display_name": "hs9587.bsky.social",
-      "count": 2,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dpboaj6zslupfvh55s745uqh/bafkreido6h6422obpcnci2t5p53dnsqkj3m7lzpmpp46pccvmx3lg2rqlq"
-    },
-    {
-      "handle": "pocketp.bsky.social",
-      "display_name": "ポケ",
-      "count": 2,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bgvq4aimxqfh3owblzydrscs/bafkreibylod7fvvqwa4dmkxfo476z3m2i2gnsbcyh35onciyyhfsjejysa"
     },
     {
       "handle": "yamasa.bsky.social",
@@ -114,6 +114,18 @@
       "display_name": "mininekochip.bsky.social",
       "count": 1,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rbl4cvc5tfmdxz5rrwsnn2me/bafkreih3vcwbbnei4s6fiubyh3jxjuyheb7oo63fycn5em55kr5pdwhgse"
+    },
+    {
+      "handle": "y-aki.bsky.social",
+      "display_name": "y-Aki",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6snp36zofbvtybdkuqzu4noo/bafkreidiw2zefukz44qznmkxa2z3r4ke63sinntwuzvgxcch5qfiumdoa4"
+    },
+    {
+      "handle": "nagachika.bsky.social",
+      "display_name": "nagachika",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:634y4pmtpfspdjd5zhx5bmsn/bafkreicwjroj2tvy4565cwhrlpe3uiqqkb3yphbmg3zy7lnugu4q2xr2ou"
     }
   ]
 }
