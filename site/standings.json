@@ -2,10 +2,10 @@
   "season": "2026",
   "season_start": "2026-11-25",
   "season_end": null,
-  "generated_at": "2026-11-26T12:50:06+09:00",
-  "participants": 20,
-  "total_count": 38,
-  "counted_posts": 26,
+  "generated_at": "2026-11-26T23:49:26+09:00",
+  "participants": 25,
+  "total_count": 49,
+  "counted_posts": 35,
   "standings": [
     {
       "handle": "tanigawa.bsky.social",
@@ -20,10 +20,22 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g43cnkwzmxw6zmxhgi66sxy3/bafkreid75k67wbx6ot2pbpibk7ijbqetwptslsr6anu4gqo5qfl7im432u"
     },
     {
+      "handle": "pocketp.bsky.social",
+      "display_name": "ポケ",
+      "count": 4,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bgvq4aimxqfh3owblzydrscs/bafkreibylod7fvvqwa4dmkxfo476z3m2i2gnsbcyh35onciyyhfsjejysa"
+    },
+    {
       "handle": "takkanm.bsky.social",
       "display_name": "takkanm.bsky.social",
       "count": 4,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xe5y6bx434zyuhyho6vklpqt/bafkreia2k27w4scap4zle6nhloalk3iw3z3ug5qhjvwclxwfqggbkdleie"
+    },
+    {
+      "handle": "nathyxyb52.bsky.social",
+      "display_name": "まじかる☆なっすぃ～🐇🩵♣️ @望月うとと宣伝部青空支部(自称)",
+      "count": 4,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hecj3tvjlq4lzmxdbeot76iq/bafkreicek7qb73xf3ikghgilllfi33cefwmogtokiwzw6wa6zaox3f7u6i"
     },
     {
       "handle": "daluma-po.bsky.social",
@@ -32,28 +44,28 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ektv663sn5gs7rf4n7rgotqx/bafkreid754w2ks6du6me5yhqjvmi4xyhq36d3ts6klodt46bfpsdzy2lpq"
     },
     {
-      "handle": "pocketp.bsky.social",
-      "display_name": "ポケ",
-      "count": 2,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bgvq4aimxqfh3owblzydrscs/bafkreibylod7fvvqwa4dmkxfo476z3m2i2gnsbcyh35onciyyhfsjejysa"
-    },
-    {
       "handle": "hs9587.bsky.social",
       "display_name": "hs9587.bsky.social",
       "count": 2,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dpboaj6zslupfvh55s745uqh/bafkreido6h6422obpcnci2t5p53dnsqkj3m7lzpmpp46pccvmx3lg2rqlq"
     },
     {
-      "handle": "nathyxyb52.bsky.social",
-      "display_name": "まじかる☆なっすぃ～🐇🩵♣️ @望月うとと宣伝部青空支部(自称)",
-      "count": 2,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hecj3tvjlq4lzmxdbeot76iq/bafkreicek7qb73xf3ikghgilllfi33cefwmogtokiwzw6wa6zaox3f7u6i"
-    },
-    {
       "handle": "anya-i.bsky.social",
       "display_name": "aya",
       "count": 2,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2hvobflqc4irfojvvbmmk6a3/bafkreibyjmlc7gb6tr6nh5txzfvd3fm2lp47j3wvamspxoyficlkecunfm"
+    },
+    {
+      "handle": "ak2next.bsky.social",
+      "display_name": "ak2next.bsky.social",
+      "count": 2,
+      "avatar": null
+    },
+    {
+      "handle": "kan.fushihara.net",
+      "display_name": "かん🐳",
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3vm57fplarih5f5lpi2ixxeg/bafkreie7gdxs7ypr6swxxefw4m2josmftu72ofitq443srwr6qjq4oks3u"
     },
     {
       "handle": "yamasa.bsky.social",
@@ -92,12 +104,6 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:25n3hpkba52ewv6fruifgxr6/bafkreib5o5wctxzwqsftur5sxslgyknsua6otqwwurshftbejnova7ntne"
     },
     {
-      "handle": "ak2next.bsky.social",
-      "display_name": "ak2next.bsky.social",
-      "count": 1,
-      "avatar": null
-    },
-    {
       "handle": "yuzupon116.bsky.social",
       "display_name": "ゆずぽんず",
       "count": 1,
@@ -116,16 +122,40 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rbl4cvc5tfmdxz5rrwsnn2me/bafkreih3vcwbbnei4s6fiubyh3jxjuyheb7oo63fycn5em55kr5pdwhgse"
     },
     {
+      "handle": "nagachika.bsky.social",
+      "display_name": "nagachika",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:634y4pmtpfspdjd5zhx5bmsn/bafkreicwjroj2tvy4565cwhrlpe3uiqqkb3yphbmg3zy7lnugu4q2xr2ou"
+    },
+    {
       "handle": "y-aki.bsky.social",
       "display_name": "y-Aki",
       "count": 1,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6snp36zofbvtybdkuqzu4noo/bafkreidiw2zefukz44qznmkxa2z3r4ke63sinntwuzvgxcch5qfiumdoa4"
     },
     {
-      "handle": "nagachika.bsky.social",
-      "display_name": "nagachika",
+      "handle": "freedomcat.com",
+      "display_name": "shino",
       "count": 1,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:634y4pmtpfspdjd5zhx5bmsn/bafkreicwjroj2tvy4565cwhrlpe3uiqqkb3yphbmg3zy7lnugu4q2xr2ou"
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mezohccz6q2lvatzegioj7x7/bafkreibxviomaeey3zjcxdzgoupox22nky4yb72uhn5zw22fesrrarkkka"
+    },
+    {
+      "handle": "maripony.bsky.social",
+      "display_name": "maripony.bsky.social",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jx7boel57ebxogo7exwiqrpa/bafkreiayxwey54t2mg3hf7tyfdjo7xe3sqavcxgt5nzvmbqfc2etkj2nqm"
+    },
+    {
+      "handle": "inutame.bsky.social",
+      "display_name": "いぬため",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:igizk7vdt2lcstxjbzpjayta/bafkreicdklejbkoemmgd4yqvtffc4dg4xxz7luakfu5zxnm5ky6jypjyya"
+    },
+    {
+      "handle": "mkouhei.bsky.social",
+      "display_name": "Kouhei Maeda",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qbkmsuicsa52yhhjk3y4y23k/bafkreicvcl2gbsaez4kb54wiv4i5zf7a7hyop4uc5lq4hv2uhvttlmvo7e"
     }
   ]
 }
