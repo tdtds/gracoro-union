@@ -2,91 +2,112 @@
   "season": "2026",
   "season_start": "2026-11-25",
   "season_end": null,
-  "generated_at": "2026-11-25T23:49:28+09:00",
-  "participants": 16,
-  "total_count": 26,
-  "counted_posts": 18,
+  "generated_at": "2026-11-26T09:46:34+09:00",
+  "participants": 17,
+  "total_count": 29,
+  "counted_posts": 20,
   "standings": [
     {
       "handle": "tanigawa.bsky.social",
       "display_name": "谷川",
-      "count": 6
+      "count": 6,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gprs2gnb24rb6fwy5q3v53vg/bafkreihhdxm7rgrrwygai6gf45qggk2g3xpoomhjx4o7xujyn2yciyd5lm"
     },
     {
       "handle": "daluma-po.bsky.social",
       "display_name": "DALUMA♪",
-      "count": 4
-    },
-    {
-      "handle": "takkanm.bsky.social",
-      "display_name": "takkanm.bsky.social",
-      "count": 2
-    },
-    {
-      "handle": "anya-i.bsky.social",
-      "display_name": "aya",
-      "count": 2
-    },
-    {
-      "handle": "mininekochip.bsky.social",
-      "display_name": "mininekochip.bsky.social",
-      "count": 1
-    },
-    {
-      "handle": "mizusawa.freelance.ne.jp",
-      "display_name": "水沢祐/T.Azami",
-      "count": 1
-    },
-    {
-      "handle": "yuzupon116.bsky.social",
-      "display_name": "ゆずぽんず",
-      "count": 1
-    },
-    {
-      "handle": "ak2next.bsky.social",
-      "display_name": "ak2next.bsky.social",
-      "count": 1
-    },
-    {
-      "handle": "hs9587.bsky.social",
-      "display_name": "hs9587.bsky.social",
-      "count": 1
-    },
-    {
-      "handle": "rinrinne.bsky.social",
-      "display_name": "りんね / rin_ne",
-      "count": 1
-    },
-    {
-      "handle": "krbshi.bsky.social",
-      "display_name": "くるぶし",
-      "count": 1
+      "count": 4,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ektv663sn5gs7rf4n7rgotqx/bafkreid754w2ks6du6me5yhqjvmi4xyhq36d3ts6klodt46bfpsdzy2lpq"
     },
     {
       "handle": "nathyxyb52.bsky.social",
       "display_name": "まじかる☆なっすぃ～🐇🩵♣️ @望月うとと宣伝部青空支部(自称)",
-      "count": 1
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hecj3tvjlq4lzmxdbeot76iq/bafkreicek7qb73xf3ikghgilllfi33cefwmogtokiwzw6wa6zaox3f7u6i"
     },
     {
-      "handle": "minimum2scp.bsky.social",
-      "display_name": "YAMADA Tsuyoshi",
-      "count": 1
+      "handle": "anya-i.bsky.social",
+      "display_name": "aya",
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2hvobflqc4irfojvvbmmk6a3/bafkreibyjmlc7gb6tr6nh5txzfvd3fm2lp47j3wvamspxoyficlkecunfm"
     },
     {
-      "handle": "tdtds.jp",
-      "display_name": "tdtds / 革小物工房LGTM",
-      "count": 1
+      "handle": "takkanm.bsky.social",
+      "display_name": "takkanm.bsky.social",
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xe5y6bx434zyuhyho6vklpqt/bafkreia2k27w4scap4zle6nhloalk3iw3z3ug5qhjvwclxwfqggbkdleie"
     },
     {
-      "handle": "nanaitanbo.bsky.social",
-      "display_name": "七井",
-      "count": 1
+      "handle": "ppoi.bsky.social",
+      "display_name": "PPOI",
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g43cnkwzmxw6zmxhgi66sxy3/bafkreid75k67wbx6ot2pbpibk7ijbqetwptslsr6anu4gqo5qfl7im432u"
     },
     {
       "handle": "yamasa.bsky.social",
       "display_name": "やまさ",
-      "count": 1
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ktsk2rmjapthqffqhi725ckk/bafkreihsare7nkq62ehfaujmhdr2yril6gf5fewkh6hovao2eej6o34vea"
+    },
+    {
+      "handle": "nanaitanbo.bsky.social",
+      "display_name": "七井",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:zfzvqaz5ka72bhf6cvhl2z44/bafkreihgrgy7ukhfevbosbogghsv5wtixfqjclw4z5bcxlkyvel7eujzvi"
+    },
+    {
+      "handle": "tdtds.jp",
+      "display_name": "tdtds / 革小物工房LGTM",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qhcvkcxwhsdjmqcibkq42puu/bafkreiaeo4icaaf3emqff4gwdzgwwoqbtfysuzarfl7cssa6d5hvdpn7ra"
+    },
+    {
+      "handle": "minimum2scp.bsky.social",
+      "display_name": "YAMADA Tsuyoshi",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mnjoc5m7y6pic2tnovsjqwp4/bafkreifl3gfa6snxqhzgcang7uckmb2nmlwo4qomc6jr4ihhmhynirvbgm"
+    },
+    {
+      "handle": "krbshi.bsky.social",
+      "display_name": "くるぶし",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ak2vac5jdmi72szfelph36xj/bafkreigmzyf2gy2x77e7mwpf2rifhpnjjj4bxjyxrxik2imsqjzi273gyi"
+    },
+    {
+      "handle": "rinrinne.bsky.social",
+      "display_name": "りんね / rin_ne",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:25n3hpkba52ewv6fruifgxr6/bafkreib5o5wctxzwqsftur5sxslgyknsua6otqwwurshftbejnova7ntne"
+    },
+    {
+      "handle": "hs9587.bsky.social",
+      "display_name": "hs9587.bsky.social",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dpboaj6zslupfvh55s745uqh/bafkreido6h6422obpcnci2t5p53dnsqkj3m7lzpmpp46pccvmx3lg2rqlq"
+    },
+    {
+      "handle": "ak2next.bsky.social",
+      "display_name": "ak2next.bsky.social",
+      "count": 1,
+      "avatar": null
+    },
+    {
+      "handle": "yuzupon116.bsky.social",
+      "display_name": "ゆずぽんず",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jivyrpfwbukiqsarbiekf6fh/bafkreideljspbd32azxxzttg5pbxwxlysbquh5aiu2doam7aftexzn6boq"
+    },
+    {
+      "handle": "mizusawa.freelance.ne.jp",
+      "display_name": "水沢祐/T.Azami",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:p2iq5amlxw4pybsifha6xxs6/bafkreiax6sn4i4x5k257u2fa3u3tyuiqbxnun5i3vqy773olpilvhdsyku"
+    },
+    {
+      "handle": "mininekochip.bsky.social",
+      "display_name": "mininekochip.bsky.social",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:rbl4cvc5tfmdxz5rrwsnn2me/bafkreih3vcwbbnei4s6fiubyh3jxjuyheb7oo63fycn5em55kr5pdwhgse"
     }
   ]
 }
-
