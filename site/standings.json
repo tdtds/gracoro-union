@@ -2,10 +2,10 @@
   "season": "2026",
   "season_start": "2026-11-25",
   "season_end": null,
-  "generated_at": "2026-11-26T09:46:34+09:00",
-  "participants": 17,
-  "total_count": 29,
-  "counted_posts": 20,
+  "generated_at": "2026-11-26T10:48:12+09:00",
+  "participants": 18,
+  "total_count": 36,
+  "counted_posts": 24,
   "standings": [
     {
       "handle": "tanigawa.bsky.social",
@@ -20,6 +20,18 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ektv663sn5gs7rf4n7rgotqx/bafkreid754w2ks6du6me5yhqjvmi4xyhq36d3ts6klodt46bfpsdzy2lpq"
     },
     {
+      "handle": "takkanm.bsky.social",
+      "display_name": "takkanm.bsky.social",
+      "count": 4,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xe5y6bx434zyuhyho6vklpqt/bafkreia2k27w4scap4zle6nhloalk3iw3z3ug5qhjvwclxwfqggbkdleie"
+    },
+    {
+      "handle": "ppoi.bsky.social",
+      "display_name": "PPOI",
+      "count": 4,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g43cnkwzmxw6zmxhgi66sxy3/bafkreid75k67wbx6ot2pbpibk7ijbqetwptslsr6anu4gqo5qfl7im432u"
+    },
+    {
       "handle": "nathyxyb52.bsky.social",
       "display_name": "まじかる☆なっすぃ～🐇🩵♣️ @望月うとと宣伝部青空支部(自称)",
       "count": 2,
@@ -32,16 +44,16 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2hvobflqc4irfojvvbmmk6a3/bafkreibyjmlc7gb6tr6nh5txzfvd3fm2lp47j3wvamspxoyficlkecunfm"
     },
     {
-      "handle": "takkanm.bsky.social",
-      "display_name": "takkanm.bsky.social",
+      "handle": "hs9587.bsky.social",
+      "display_name": "hs9587.bsky.social",
       "count": 2,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xe5y6bx434zyuhyho6vklpqt/bafkreia2k27w4scap4zle6nhloalk3iw3z3ug5qhjvwclxwfqggbkdleie"
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dpboaj6zslupfvh55s745uqh/bafkreido6h6422obpcnci2t5p53dnsqkj3m7lzpmpp46pccvmx3lg2rqlq"
     },
     {
-      "handle": "ppoi.bsky.social",
-      "display_name": "PPOI",
+      "handle": "pocketp.bsky.social",
+      "display_name": "ポケ",
       "count": 2,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g43cnkwzmxw6zmxhgi66sxy3/bafkreid75k67wbx6ot2pbpibk7ijbqetwptslsr6anu4gqo5qfl7im432u"
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bgvq4aimxqfh3owblzydrscs/bafkreibylod7fvvqwa4dmkxfo476z3m2i2gnsbcyh35onciyyhfsjejysa"
     },
     {
       "handle": "yamasa.bsky.social",
@@ -78,12 +90,6 @@
       "display_name": "りんね / rin_ne",
       "count": 1,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:25n3hpkba52ewv6fruifgxr6/bafkreib5o5wctxzwqsftur5sxslgyknsua6otqwwurshftbejnova7ntne"
-    },
-    {
-      "handle": "hs9587.bsky.social",
-      "display_name": "hs9587.bsky.social",
-      "count": 1,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dpboaj6zslupfvh55s745uqh/bafkreido6h6422obpcnci2t5p53dnsqkj3m7lzpmpp46pccvmx3lg2rqlq"
     },
     {
       "handle": "ak2next.bsky.social",
