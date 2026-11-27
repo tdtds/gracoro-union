@@ -2,16 +2,28 @@
   "season": "2026",
   "season_start": "2026-11-25",
   "season_end": null,
-  "generated_at": "2026-11-27T12:50:05+09:00",
-  "participants": 26,
-  "total_count": 53,
-  "counted_posts": 39,
+  "generated_at": "2026-11-27T23:49:26+09:00",
+  "participants": 29,
+  "total_count": 72,
+  "counted_posts": 53,
   "standings": [
     {
       "handle": "tanigawa.bsky.social",
       "display_name": "谷川",
-      "count": 6,
+      "count": 8,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:gprs2gnb24rb6fwy5q3v53vg/bafkreihhdxm7rgrrwygai6gf45qggk2g3xpoomhjx4o7xujyn2yciyd5lm"
+    },
+    {
+      "handle": "pocketp.bsky.social",
+      "display_name": "ポケ",
+      "count": 6,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bgvq4aimxqfh3owblzydrscs/bafkreibylod7fvvqwa4dmkxfo476z3m2i2gnsbcyh35onciyyhfsjejysa"
+    },
+    {
+      "handle": "nathyxyb52.bsky.social",
+      "display_name": "まじかる☆なっすぃ～🐇🩵♣️ @望月うとと宣伝部青空支部(自称)",
+      "count": 6,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hecj3tvjlq4lzmxdbeot76iq/bafkreicek7qb73xf3ikghgilllfi33cefwmogtokiwzw6wa6zaox3f7u6i"
     },
     {
       "handle": "ppoi.bsky.social",
@@ -20,22 +32,16 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g43cnkwzmxw6zmxhgi66sxy3/bafkreid75k67wbx6ot2pbpibk7ijbqetwptslsr6anu4gqo5qfl7im432u"
     },
     {
-      "handle": "pocketp.bsky.social",
-      "display_name": "ポケ",
-      "count": 4,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:bgvq4aimxqfh3owblzydrscs/bafkreibylod7fvvqwa4dmkxfo476z3m2i2gnsbcyh35onciyyhfsjejysa"
-    },
-    {
       "handle": "takkanm.bsky.social",
       "display_name": "takkanm.bsky.social",
       "count": 4,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:xe5y6bx434zyuhyho6vklpqt/bafkreia2k27w4scap4zle6nhloalk3iw3z3ug5qhjvwclxwfqggbkdleie"
     },
     {
-      "handle": "nathyxyb52.bsky.social",
-      "display_name": "まじかる☆なっすぃ～🐇🩵♣️ @望月うとと宣伝部青空支部(自称)",
+      "handle": "anya-i.bsky.social",
+      "display_name": "aya",
       "count": 4,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:hecj3tvjlq4lzmxdbeot76iq/bafkreicek7qb73xf3ikghgilllfi33cefwmogtokiwzw6wa6zaox3f7u6i"
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2hvobflqc4irfojvvbmmk6a3/bafkreibyjmlc7gb6tr6nh5txzfvd3fm2lp47j3wvamspxoyficlkecunfm"
     },
     {
       "handle": "daluma-po.bsky.social",
@@ -44,22 +50,40 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ektv663sn5gs7rf4n7rgotqx/bafkreid754w2ks6du6me5yhqjvmi4xyhq36d3ts6klodt46bfpsdzy2lpq"
     },
     {
-      "handle": "anya-i.bsky.social",
-      "display_name": "aya",
-      "count": 3,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2hvobflqc4irfojvvbmmk6a3/bafkreibyjmlc7gb6tr6nh5txzfvd3fm2lp47j3wvamspxoyficlkecunfm"
-    },
-    {
       "handle": "hs9587.bsky.social",
       "display_name": "hs9587.bsky.social",
-      "count": 2,
+      "count": 3,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dpboaj6zslupfvh55s745uqh/bafkreido6h6422obpcnci2t5p53dnsqkj3m7lzpmpp46pccvmx3lg2rqlq"
+    },
+    {
+      "handle": "yamasa.bsky.social",
+      "display_name": "やまさ",
+      "count": 3,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ktsk2rmjapthqffqhi725ckk/bafkreihsare7nkq62ehfaujmhdr2yril6gf5fewkh6hovao2eej6o34vea"
+    },
+    {
+      "handle": "krbshi.bsky.social",
+      "display_name": "くるぶし",
+      "count": 3,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ak2vac5jdmi72szfelph36xj/bafkreigmzyf2gy2x77e7mwpf2rifhpnjjj4bxjyxrxik2imsqjzi273gyi"
+    },
+    {
+      "handle": "mizusawa.freelance.ne.jp",
+      "display_name": "水沢祐/T.Azami",
+      "count": 3,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:p2iq5amlxw4pybsifha6xxs6/bafkreiax6sn4i4x5k257u2fa3u3tyuiqbxnun5i3vqy773olpilvhdsyku"
     },
     {
       "handle": "ak2next.bsky.social",
       "display_name": "ak2next.bsky.social",
       "count": 2,
       "avatar": null
+    },
+    {
+      "handle": "mkouhei.bsky.social",
+      "display_name": "Kouhei Maeda",
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qbkmsuicsa52yhhjk3y4y23k/bafkreicvcl2gbsaez4kb54wiv4i5zf7a7hyop4uc5lq4hv2uhvttlmvo7e"
     },
     {
       "handle": "maripony.bsky.social",
@@ -74,10 +98,10 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:3vm57fplarih5f5lpi2ixxeg/bafkreie7gdxs7ypr6swxxefw4m2josmftu72ofitq443srwr6qjq4oks3u"
     },
     {
-      "handle": "yamasa.bsky.social",
-      "display_name": "やまさ",
-      "count": 1,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ktsk2rmjapthqffqhi725ckk/bafkreihsare7nkq62ehfaujmhdr2yril6gf5fewkh6hovao2eej6o34vea"
+      "handle": "sanmorishi.bsky.social",
+      "display_name": "さんたまりあ＠もりし",
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:cluw7hzd46c6oljwprrw6slt/bafkreigf3gexf32bbuib6mfrwkib46jfrcjhvg475jdxowi5phzb5qs32a"
     },
     {
       "handle": "nanaitanbo.bsky.social",
@@ -98,12 +122,6 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mnjoc5m7y6pic2tnovsjqwp4/bafkreifl3gfa6snxqhzgcang7uckmb2nmlwo4qomc6jr4ihhmhynirvbgm"
     },
     {
-      "handle": "krbshi.bsky.social",
-      "display_name": "くるぶし",
-      "count": 1,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ak2vac5jdmi72szfelph36xj/bafkreigmzyf2gy2x77e7mwpf2rifhpnjjj4bxjyxrxik2imsqjzi273gyi"
-    },
-    {
       "handle": "rinrinne.bsky.social",
       "display_name": "りんね / rin_ne",
       "count": 1,
@@ -114,12 +132,6 @@
       "display_name": "ゆずぽんず",
       "count": 1,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jivyrpfwbukiqsarbiekf6fh/bafkreideljspbd32azxxzttg5pbxwxlysbquh5aiu2doam7aftexzn6boq"
-    },
-    {
-      "handle": "mizusawa.freelance.ne.jp",
-      "display_name": "水沢祐/T.Azami",
-      "count": 1,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:p2iq5amlxw4pybsifha6xxs6/bafkreiax6sn4i4x5k257u2fa3u3tyuiqbxnun5i3vqy773olpilvhdsyku"
     },
     {
       "handle": "mininekochip.bsky.social",
@@ -140,12 +152,6 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6snp36zofbvtybdkuqzu4noo/bafkreidiw2zefukz44qznmkxa2z3r4ke63sinntwuzvgxcch5qfiumdoa4"
     },
     {
-      "handle": "mkouhei.bsky.social",
-      "display_name": "Kouhei Maeda",
-      "count": 1,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qbkmsuicsa52yhhjk3y4y23k/bafkreicvcl2gbsaez4kb54wiv4i5zf7a7hyop4uc5lq4hv2uhvttlmvo7e"
-    },
-    {
       "handle": "inutame.bsky.social",
       "display_name": "いぬため",
       "count": 1,
@@ -162,6 +168,18 @@
       "display_name": "さとし 📷🌟🗻☕️ Satoshi",
       "count": 1,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:354msocxidqdgg7xg32fyecc/bafkreigad4tcklgw3d6qamsbyg4yk6lm6qdjoigpxayrcpumsloj3n7nyu"
+    },
+    {
+      "handle": "mfjt.jp",
+      "display_name": "oɹıɥɐsɐɯ ɐʇıɾnɟ",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:vmthqq65lqtilkew6sxvdlbo/bafkreianm7dljdhyste2btvoh75hpphglcvnpbk2fotqpp5tohrms35c2i"
+    },
+    {
+      "handle": "gurags.bsky.social",
+      "display_name": "ぐら",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:asl3nyv72drjfrilziiwftck/bafkreibwu6n2uhu7hkxasxeofumg5rmrtlcvoez7axetpnh6n6un74br6y"
     }
   ]
 }
