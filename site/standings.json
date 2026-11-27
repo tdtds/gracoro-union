@@ -2,10 +2,10 @@
   "season": "2026",
   "season_start": "2026-11-25",
   "season_end": null,
-  "generated_at": "2026-11-26T23:49:26+09:00",
-  "participants": 25,
-  "total_count": 49,
-  "counted_posts": 35,
+  "generated_at": "2026-11-27T12:50:05+09:00",
+  "participants": 26,
+  "total_count": 53,
+  "counted_posts": 39,
   "standings": [
     {
       "handle": "tanigawa.bsky.social",
@@ -16,7 +16,7 @@
     {
       "handle": "ppoi.bsky.social",
       "display_name": "PPOI",
-      "count": 4,
+      "count": 5,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:g43cnkwzmxw6zmxhgi66sxy3/bafkreid75k67wbx6ot2pbpibk7ijbqetwptslsr6anu4gqo5qfl7im432u"
     },
     {
@@ -44,22 +44,28 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:ektv663sn5gs7rf4n7rgotqx/bafkreid754w2ks6du6me5yhqjvmi4xyhq36d3ts6klodt46bfpsdzy2lpq"
     },
     {
+      "handle": "anya-i.bsky.social",
+      "display_name": "aya",
+      "count": 3,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2hvobflqc4irfojvvbmmk6a3/bafkreibyjmlc7gb6tr6nh5txzfvd3fm2lp47j3wvamspxoyficlkecunfm"
+    },
+    {
       "handle": "hs9587.bsky.social",
       "display_name": "hs9587.bsky.social",
       "count": 2,
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:dpboaj6zslupfvh55s745uqh/bafkreido6h6422obpcnci2t5p53dnsqkj3m7lzpmpp46pccvmx3lg2rqlq"
     },
     {
-      "handle": "anya-i.bsky.social",
-      "display_name": "aya",
-      "count": 2,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:2hvobflqc4irfojvvbmmk6a3/bafkreibyjmlc7gb6tr6nh5txzfvd3fm2lp47j3wvamspxoyficlkecunfm"
-    },
-    {
       "handle": "ak2next.bsky.social",
       "display_name": "ak2next.bsky.social",
       "count": 2,
       "avatar": null
+    },
+    {
+      "handle": "maripony.bsky.social",
+      "display_name": "maripony.bsky.social",
+      "count": 2,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jx7boel57ebxogo7exwiqrpa/bafkreiayxwey54t2mg3hf7tyfdjo7xe3sqavcxgt5nzvmbqfc2etkj2nqm"
     },
     {
       "handle": "kan.fushihara.net",
@@ -134,16 +140,10 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:6snp36zofbvtybdkuqzu4noo/bafkreidiw2zefukz44qznmkxa2z3r4ke63sinntwuzvgxcch5qfiumdoa4"
     },
     {
-      "handle": "freedomcat.com",
-      "display_name": "shino",
+      "handle": "mkouhei.bsky.social",
+      "display_name": "Kouhei Maeda",
       "count": 1,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mezohccz6q2lvatzegioj7x7/bafkreibxviomaeey3zjcxdzgoupox22nky4yb72uhn5zw22fesrrarkkka"
-    },
-    {
-      "handle": "maripony.bsky.social",
-      "display_name": "maripony.bsky.social",
-      "count": 1,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:jx7boel57ebxogo7exwiqrpa/bafkreiayxwey54t2mg3hf7tyfdjo7xe3sqavcxgt5nzvmbqfc2etkj2nqm"
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qbkmsuicsa52yhhjk3y4y23k/bafkreicvcl2gbsaez4kb54wiv4i5zf7a7hyop4uc5lq4hv2uhvttlmvo7e"
     },
     {
       "handle": "inutame.bsky.social",
@@ -152,10 +152,16 @@
       "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:igizk7vdt2lcstxjbzpjayta/bafkreicdklejbkoemmgd4yqvtffc4dg4xxz7luakfu5zxnm5ky6jypjyya"
     },
     {
-      "handle": "mkouhei.bsky.social",
-      "display_name": "Kouhei Maeda",
+      "handle": "freedomcat.com",
+      "display_name": "shino",
       "count": 1,
-      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:qbkmsuicsa52yhhjk3y4y23k/bafkreicvcl2gbsaez4kb54wiv4i5zf7a7hyop4uc5lq4hv2uhvttlmvo7e"
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:mezohccz6q2lvatzegioj7x7/bafkreibxviomaeey3zjcxdzgoupox22nky4yb72uhn5zw22fesrrarkkka"
+    },
+    {
+      "handle": "ysmr3104.bsky.social",
+      "display_name": "さとし 📷🌟🗻☕️ Satoshi",
+      "count": 1,
+      "avatar": "https://cdn.bsky.app/img/avatar/plain/did:plc:354msocxidqdgg7xg32fyecc/bafkreigad4tcklgw3d6qamsbyg4yk6lm6qdjoigpxayrcpumsloj3n7nyu"
     }
   ]
 }
